@@ -1,0 +1,38 @@
+daemonize
+show-failed-attempts
+clock
+screenshot
+effect-blur=15x15
+effect-vignette=1:1
+color=#2b33980
+font="JetBrainsMono NFM"
+indicator
+indicator-radius=200
+indicator-thickness=20
+line-color=#101010
+ring-color=#101010
+inside-color=#101010
+key-hl-color=#7b919a
+separator-color=#00000000
+text-color=#d8dee9
+text-caps-lock-color=""
+line-ver-color=#dad4c3
+ring-ver-color=#dad4c3
+inside-ver-color=#101010
+text-ver-color=#dad4c3
+ring-wrong-color=#ec8989
+text-wrong-color=#ec8989
+inside-wrong-color=#101010
+inside-clear-color=#101010
+text-clear-color=#eee8d5
+ring-clear-color=#eee8d5
+line-clear-color=#101010
+line-wrong-color=#101010
+bs-hl-color=#ec8989
+grace=2
+grace-no-mouse
+grace-no-touch
+datestr=%a, %B %e
+timestr=%I:%M %p
+fade-in=0.3
+ignore-empty-password

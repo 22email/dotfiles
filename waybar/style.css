@@ -1,0 +1,130 @@
+@import "./colors.css";
+
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: JetBrains Mono NFM;
+  font-weight: bold;
+  font-size: 14px;
+  border: transparent;
+  box-shadow: none;
+}
+
+tooltip {
+  background: @bg_light;
+  border-radius: 3px;
+  color: @fg;
+}
+
+tooltip > * {
+  color: @fg;
+}
+
+window#waybar {
+  background: @bg_dark;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+/* window#waybar.termite { */
+/*     background-color: #3F3F3F; */
+/* } */
+/**/
+/* window#waybar.chromium { */
+/*     background-color: #000000; */
+/*     border: none; */
+/* } */
+
+#clock,
+#pulseaudio,
+#network,
+#tray {
+  padding: 0 16px;
+  border-radius: 3px;
+  margin: 6px;
+  background: @bg_light;
+  color: @fg;
+}
+
+#workspaces {
+  margin-left: 6px;
+  background: transparent;
+  color: @fg;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+
+#workspaces button {
+  min-width: 16px;
+  min-height: 4px;
+  border-radius: 3px;
+  background: @bg_light;
+  color: @fg;
+  margin: 6px;
+  transition: all 0.3s cubic-bezier(0.3, 0.68, 0.48, 4.682);
+}
+
+#workspaces button.persistent {
+  background: @bg_light;
+}
+
+#workspaces button.active {
+  min-width: 18px;
+  min-height: 4px;
+  background: @color7;
+  color: @bg_light;
+}
+
+#workspaces button.urgent {
+  background: @color9;
+  color: @bg_light;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+#clock {
+  background: @color6;
+  color: @bg_light;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#network.disconnected {
+  color: @color1;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: @color1;
+}
+
+#custom-power {
+  border-radius: 3px;
+  margin-right: 12px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  margin-left: 6px;
+  color: @bg_light;
+  min-width: 32px;
+  background: @color7;
+}
