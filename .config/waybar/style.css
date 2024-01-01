@@ -21,8 +21,6 @@ tooltip > * {
 
 window#waybar {
   background: @bg_dark;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
 }
 
 window#waybar.hidden {
@@ -50,6 +48,7 @@ window#waybar.solo {
 #clock,
 #pulseaudio,
 #network,
+#battery,
 #tray {
   padding: 0 16px;
   border-radius: 3px;

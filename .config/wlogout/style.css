@@ -1,17 +1,18 @@
 * {
   background-image: none;
   font-family: "JetBrainsMono NF";
-  font-size: 1.0em;
+  font-size: 1em;
 }
 window {
   background-color: rgba(12, 12, 12, 0.9);
 }
+
 button {
   color: #d8dee9;
   background-color: #101010;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 25%;
+  background-size: 12%;
   box-shadow: none;
   border: none;
   margin: 1em;
@@ -25,37 +26,25 @@ button:hover {
 }
 
 #lock {
-  background-image: image(
-    url("./icons/lock.png")
-  );
+  background-image: image(url("./icons/lock.png"));
 }
 
 #logout {
-  background-image: image(
-    url("./icons/logout.png")
-  );
+  background-image: image(url("./icons/logout.png"));
 }
 
 #suspend {
-  background-image: image(
-    url("./icons/suspend.png")
-  );
+  background-image: image(url("./icons/suspend.png"));
 }
 
 #hibernate {
-  background-image: image(
-    url("./icons/hibernate.png")
-  );
+  background-image: image(url("./icons/hibernate.png"));
 }
 
 #shutdown {
-  background-image: image(
-    url("./icons/shutdown.png")
-  );
+  background-image: image(url("./icons/shutdown.png"));
 }
 
 #reboot {
-  background-image: image(
-    url("./icons/reboot.png")
-  );
+  background-image: image(url("./icons/reboot.png"));
 }

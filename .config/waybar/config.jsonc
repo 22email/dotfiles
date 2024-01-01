@@ -7,7 +7,7 @@
   // Choose the order of the modules
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["pulseaudio", "network", "tray", "custom/power"],
+  "modules-right": ["battery", "pulseaudio", "network", "tray", "custom/power"],
   // Modules configuration
   "hyprland/workspaces": {
     "format": "{name}",
@@ -19,7 +19,7 @@
   },
   "clock": {
     "format": " {:%H:%M}",
-    "format-alt": " {:%A, %B %d, %Y (%R)}",
+    "format-alt": " {:%A, %B %d, %Y (%R)}",
     "tooltip-format": "\n<span size='9pt' font='JetBrainsMono NF'>{calendar}</span>",
     "calendar": {
       "mode": "month",
@@ -42,6 +42,19 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
     }
+  },
+  "battery": {
+    "bat": "BAT1",
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "max-length": 25
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
