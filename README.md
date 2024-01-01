@@ -1,5 +1,8 @@
 # Dotfiles for Arch Linux
 
+## Screenshots:
+
+
 ## Apps:
 
 | What               | App                                                             |
