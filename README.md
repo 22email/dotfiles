@@ -47,6 +47,9 @@ qt5-wayland
 qt6-wayland
 xdg-desktop-portal-hyprland-git
 xdg-user-dirs
+polkit-kde-agent
+
+**Audio**
 pipewire
 pipewire-alsa
 pipewire-audio
@@ -54,11 +57,13 @@ pipewire-jack
 pipewire-pulse
 gst-plugin-pipewire
 wireplumber
-polkit-kde-agent
 pamixer
-*I might have missed some stuff...
+
+**Brightness**
+brillo 
 ```
 
 A lot of stuff (scripts, kvantum theme, etc.) is from [prasanthrangan's hyprdots](https://github.com/prasanthrangan/hyprdots). <br>
+notify-send "Brightness:" "$(brillo)"
 I learned a lot of stuff from looking at his rice. <br>
 It's a great resource! Thank you, prasanthrangan.
