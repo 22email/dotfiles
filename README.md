@@ -51,7 +51,7 @@ pipewire-jack
 pipewire-pulse
 gst-plugin-pipewire
 wireplumber
-polkity-kde-agent
+polkit-kde-agent
 pamixer
 *I might have missed some stuff...
 ```
