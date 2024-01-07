@@ -12,7 +12,7 @@ temp_screenshot="/tmp/screenshot.png"
 
 mkdir -p $save_dir
 mkdir -p $swpy_dir
-echo "[Default]\nsave_dir=$save_dir\nsave_filename_format=$save_file" > $swpy_dir/config
+echo -e "[Default]\nsave_dir=$save_dir\nsave_filename_format=$save_file" > $swpy_dir/config
 
 function print_error
 {

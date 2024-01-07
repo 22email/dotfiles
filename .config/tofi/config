@@ -1,11 +1,11 @@
 	font = "/usr/share/fonts/JetBrainsMono/JetBrainsMonoNerdFontMono-Regular.ttf"
 	font-size = 12
 	hint-font = true
-	text-color = #d8dee9
-	selection-color = #7b9198
+	text-color = #e0def4
+	selection-color = #eb6f92
 	width = 30%
 	height = 20%
-	background-color = #101010
+	background-color = #191724
 	outline-width = 0
 	border-width = 0 
 	corner-radius = 12

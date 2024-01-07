@@ -27,24 +27,6 @@ window#waybar.hidden {
   opacity: 0.2;
 }
 
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-/* window#waybar.termite { */
-/*     background-color: #3F3F3F; */
-/* } */
-/**/
-/* window#waybar.chromium { */
-/*     background-color: #000000; */
-/*     border: none; */
-/* } */
-
 #clock,
 #pulseaudio,
 #network,
@@ -82,7 +64,7 @@ window#waybar.solo {
 #workspaces button.active {
   min-width: 18px;
   min-height: 4px;
-  background: @color7;
+  background: @color4;
   color: @bg_light;
 }
 
@@ -125,5 +107,5 @@ label:focus {
   margin-left: 6px;
   color: @bg_light;
   min-width: 32px;
-  background: @color7;
+  background: @color1;
 }

@@ -9,7 +9,7 @@ window {
 
 button {
   color: #d8dee9;
-  background-color: #101010;
+  background-color: #191724;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 12%;
@@ -21,7 +21,7 @@ button {
 button:focus,
 button:active,
 button:hover {
-  background-color: #1f1f1f;
+  background-color: #403d52;
   outline-style: none;
 }
 
