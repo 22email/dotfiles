@@ -54,7 +54,7 @@ window#waybar.hidden {
   background: @bg_light;
   color: @fg;
   margin: 6px;
-  transition: all 0.3s cubic-bezier(0.3, 0.68, 0.48, 4.682);
+  transition: all 0.2s cubic-bezier(.58,-.59,.36,2.51);
 }
 
 #workspaces button.persistent {
@@ -62,7 +62,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  min-width: 18px;
+  min-width: 22px;
   min-height: 4px;
   background: @color4;
   color: @bg_light;
