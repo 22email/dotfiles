@@ -7,8 +7,11 @@ alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long li
 alias ld='eza -lhD --icons=auto' # long list dirs
 alias yz='yazi'
 alias obsidian='nohup obsidian --enable-ozone --ozone-platform=wayland &'
+alias pulsemixer='pulsemixer && kill -42 $(pidof dwmblocks)'
 
 export EDITOR=nvim
+export TERMINAL=st
+wmname LG3D
 
 PROMPT='[%n@%m %~] '
 
