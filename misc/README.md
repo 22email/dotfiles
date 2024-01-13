@@ -3,5 +3,6 @@
 
 # Notes
 - The fork of dwmblocks I use is [dwmblocks-async](https://github.com/UtkarshVerma/dwmblocks-async)
+    - No patches
 - I use dmenu with 0 patches and config
 
