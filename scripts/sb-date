@@ -1,0 +1,4 @@
+#!/bin/sh
+# Displays the current time in HH:MM:SS (AM|PM)
+
+echo "[ $(date '+%I:%M:%S %p')]"

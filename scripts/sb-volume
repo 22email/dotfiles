@@ -1,0 +1,33 @@
+#!/bin/sh
+
+dpulsemixer() {
+	"$TERMINAL" -e pulsemixer
+	kill -42 $(pidof dwmblocks)
+}
+
+case $BLOCK_BUTTON in
+    1) dpulsemixer ;;
+    2) pamixer -t ;;
+    4) pamixer -i 3 ;;
+    5) pamixer -d 3 ;;
+    6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+if [ "$(pamixer --get-mute)" = true ]; then
+    display " [ ]" 9
+    exit
+fi
+
+vol="$(pamixer --get-volume)"
+[ $? -ne 0 ] && [ -z "$vol" ] && exit 1
+
+if [ "$vol" -gt 40 ]; then
+    icon=" "
+elif [ "$vol" -gt 15 ]; then
+    icon=" "
+else
+    icon=" "
+fi
+
+echo "[$icon$vol%]"
+
