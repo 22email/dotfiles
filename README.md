@@ -1,1 +1,3 @@
 SUCKLESS SOFTWARE: SOFTWARE THAT SUCKS LESS
+
+Builds of suckless software are in other repos...

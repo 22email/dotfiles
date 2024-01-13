@@ -8,6 +8,7 @@ alias ld='eza -lhD --icons=auto' # long list dirs
 alias yz='yazi'
 alias obsidian='nohup obsidian --enable-ozone --ozone-platform=wayland &'
 alias pulsemixer='pulsemixer && kill -42 $(pidof dwmblocks)'
+alias cdd='cd $(fd -t d | fzf)'
 
 export EDITOR=nvim
 export TERMINAL=st
