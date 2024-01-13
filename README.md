@@ -1,4 +1,4 @@
-# Dotfiles for Arch Linux
+# Dotfiles for Arch Linux (Hyprland/Wayland)
 
 ## Screenshots:
 forgot
