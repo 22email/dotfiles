@@ -29,5 +29,5 @@ else
     icon=" "
 fi
 
-echo "[$icon$vol%]"
+echo "^c#c4a7e7^$icon $vol%"
 

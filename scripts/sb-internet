@@ -30,4 +30,4 @@ fi
 # TUN
 [ -n "$(cat /sys/class/net/tun*/operstate 2>/dev/null)" ] && tunicon=" 🔒"
 
-printf "[%s%s%s]" "$wifiicon" "$ethericon" "$tunicon"
+printf "^c#9ccfd8^%s%s%s" "$wifiicon" "$ethericon" "$tunicon"
