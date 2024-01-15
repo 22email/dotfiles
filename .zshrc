@@ -8,11 +8,12 @@ alias ld='eza -lhD --icons=auto' # long list dirs
 alias yz='yazi'
 alias obsidian='nohup obsidian --enable-ozone --ozone-platform=wayland &'
 alias pulsemixer='pulsemixer && kill -42 $(pidof dwmblocks)'
-alias cdd='cd $(fd -t d | fzf)'
+alias cdd='cd $(fd -H -t d -a | fzf)'
+alias iv='imv $(fd -t file | fzf)'
+alias pcr="sudo pacman -Rcnsu \$(pacman -Qe | fzf | awk '{print \$1}')"
 
 export EDITOR=nvim
 export TERMINAL=st
-wmname LG3D
 
 PROMPT='[%n@%m %~] '
 
