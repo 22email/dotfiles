@@ -5,7 +5,6 @@ alias  l='eza -lh  --icons=auto' # long list
 alias ls='eza -1   --icons=auto' # short list
 alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
 alias ld='eza -lhD --icons=auto' # long list dirs
-alias yz='yazi'
 alias obsidian='nohup obsidian --enable-ozone --ozone-platform=wayland &'
 alias pulsemixer='pulsemixer && kill -42 $(pidof dwmblocks)'
 alias cdd='cd $(fd -H -t d -a | fzf)'

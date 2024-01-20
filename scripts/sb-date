@@ -1,4 +1,9 @@
 #!/bin/sh
 # Displays the current time in HH:MM:SS (AM|PM)
 
-echo "^c#f6c177^  $(date '+%I:%M:%S %p')"
+case $BLOCK_BUTTON in
+    1) "$TERMINAL" -e calcurse ;;
+    6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+echo "^c#f6c177^󱑆 $(date '+%I:%M:%S %p')"
