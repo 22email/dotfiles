@@ -1,6 +1,9 @@
 # Dotfiles for Arch Linux (Hyprland/Wayland)
 
+## See the other branch (Suckless) for Void dots (there's nothing there btw)
+
 ## Screenshots:
+
 forgot
 
 ## Apps:
@@ -17,15 +20,16 @@ forgot
 | <center>**Emoji**</center>              | <center>[**Emote**](https://github.com/tom-james-watson/Emote)</center>     |
 | <center>**Lock Screen**</center>        | <center>[**Swaylock-effects**](https://github.com/jirutka/swaylock-effects) |
 | <center>**Logout Screen**</center>      | <center>[**wlogout**](https://github.com/ArtsyMacaw/wlogout)</center>       |
+| <center>**Terminal**</center>           | <center>[**foot**](https://codeberg.org/dnkl/foot/wiki)</center>            |
 
 ## Theme:
 
-|                                   |                                                         |
-| --------------------------------- | ------------------------------------------------------- |
-| <center>**Colourscheme**</center> | **Rose Pine**                                           |
-| <center>**Kvantum**</center>      | https://github.com/FZDSLR/RosePine-Kvantum              |
-| <center>**GTK**</center>          | https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme |
-| <center>**Cursor**</center>       | https://aur.archlinux.org/packages/bibata-cursor-theme  |
+|                                   |                                                        |
+| --------------------------------- | ------------------------------------------------------ |
+| <center>**Colourscheme**</center> | **Rose Pine**                                          |
+| <center>**Kvantum**</center>      | https://github.com/FZDSLR/RosePine-Kvantum             |
+| <center>**GTK**</center>          | https://github.com/rose-pine/gtk                       |
+| <center>**Cursor**</center>       | https://aur.archlinux.org/packages/bibata-cursor-theme |
 
 ## Other stuff:
 
