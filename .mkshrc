@@ -1,0 +1,33 @@
+# vim: ft=sh
+alias  l='eza -lh  --icons=auto' # long list
+alias ls='eza -1   --icons=auto' # short list
+alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
+alias ld='eza -lhD --icons=auto' # long list dirs
+alias obsidian='nohup obsidian --enable-ozone --ozone-platform=wayland &'
+alias pulsemixer='pulsemixer && kill -42 $(pidof dwmblocks)'
+alias cdd='cd $(fd -H -t d -a | fzf)'
+alias iv='imv $(fd -t file | fzf)'
+alias pcr="sudo pacman -Rcnsu \$(pacman -Qe | fzf | awk '{print \$1}')"
+alias cl=clear
+alias ye=yay # Ha.
+
+export EDITOR=nvim
+export TERMINAL=st
+
+hname=$(uname -n)
+function _cd {
+  \cd "$@"
+  PS1=$(
+    print -n "[$LOGNAME@$hname "
+    if [[ "${PWD#$HOME}" != "$PWD" ]]; then
+      print -n "~${PWD#$HOME}]"
+    else
+      print -n "$PWD]"
+    fi
+    print "$ "
+  )
+}
+
+alias cd=_cd
+
+cd "$PWD"
