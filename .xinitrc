@@ -1,6 +1,7 @@
-feh --bg-fill ~/dotfiles/wallpapers/bridge.jpg
+feh --bg-fill ~/dotfiles/wallpapers/3c9203dca6873e85879197389228-1520111.jpg
 compfy &
 dunst &
-dwmblocks &
-export XDG_SESSION_TYPE=x11
+dwmblocks & 
+pipewire &
+eww daemon &
 exec dwm

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+launch_power() {
+  eww close calwin 2>/dev/null
+  eww open --toggle power 
+}
+
+case $BLOCK_BUTTON in 
+  1) launch_power ;;
+  6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+echo " 󰐥  "

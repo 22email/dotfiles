@@ -1,12 +1,12 @@
 #!/bin/sh
 
-dpulsemixer() {
+lpulsemixer() {
 	"$TERMINAL" -e pulsemixer
 	kill -42 $(pidof dwmblocks)
 }
 
 case $BLOCK_BUTTON in
-    1) dpulsemixer ;;
+    1) lpulsemixer ;;
     2) pamixer -t ;;
     4) pamixer -i 3 ;;
     5) pamixer -d 3 ;;
@@ -14,7 +14,7 @@ case $BLOCK_BUTTON in
 esac
 
 if [ "$(pamixer --get-mute)" = true ]; then
-    echo "^c#c4a7e7^󰝟" 
+    echo " 󰝟 " 
     exit
 fi
 
@@ -29,5 +29,7 @@ else
     icon=""
 fi
 
-echo "^c#c4a7e7^$icon $vol%"
+echo " $icon $vol% "
+
+# eb6f92
 
