@@ -1,7 +1,5 @@
 # Dotfiles for Arch Linux (Hyprland/Wayland)
 
-## See the other branch (Suckless) for Void dots (there's nothing there btw)
-
 ## Screenshots:
 
 forgot
