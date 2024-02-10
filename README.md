@@ -16,7 +16,7 @@
 - lockscreen: slock
 - bar: dwmblocks-async
 - shell: mksh/dash
-- editor: NvChad
+- editor: NvChad (Neovim)
 - notifs: dunst
 - compositor: compfy
 - widgets: eww
@@ -28,5 +28,5 @@
 
 ## Other
 
-- My suckless repo:
-- nOX U NEED NO TBE IDEALZD
+- My suckless repo: https://github.com/22email/suckless
+- My NvChad config: https://github.com/22email/nvchad-config
