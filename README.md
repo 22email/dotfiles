@@ -5,3 +5,7 @@
 forgot
 
 ## Apps:
+
+## TODO
+
+- AGS rewrite for the bar & powermenu 
