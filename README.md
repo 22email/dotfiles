@@ -1,11 +1,23 @@
-# Dotfiles for Arch Linux (Hyprland/Wayland)
+# Dotfiles for Arch Linux (Hyprland)
 
-## Screenshots:
+## Screenshots
 
 forgot
 
-## Apps:
+## Apps
+
+## Dependencies
+
+- nm-connection-editor
+- pavucontrol
+
+## Notes
+
+- No bluetooth
 
 ## TODO
 
-- AGS rewrite for the bar & powermenu 
+- [x] Rewrite bar in ags
+- [ ] Rewrite network GUI in ags
+- [ ] Rewrite volume control in ags
+- [ ] Camera widget in ags

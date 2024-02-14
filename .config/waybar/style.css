@@ -2,84 +2,73 @@
 
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: JetBrains Mono NFM;
-  font-weight: bold;
-  font-size: 14px;
-  border: transparent;
+  font-family: "JetBrainsMono NF";
+  font-size: 12px;
   box-shadow: none;
 }
 
-tooltip {
-  background: @bg_light;
-  border-radius: 3px;
-  color: @fg;
+tooltip>* {
+  border: 4px solid #16161d;
+  background: @bg_dark;
 }
 
-tooltip > * {
-  color: @fg;
+tooltip box {
+  border: transparent;
 }
 
 window#waybar {
+  background-color: transparent;
+}
+
+window#waybar>box {
   background: @bg_dark;
+  border-radius: 12px;
+  border: 4px solid @color0;
+  margin-top: 12px;
 }
 
 window#waybar.hidden {
   opacity: 0.2;
 }
 
-#clock,
-#pulseaudio,
 #network,
 #battery,
-#tray {
-  padding: 0 16px;
-  border-radius: 3px;
-  margin: 6px;
-  background: @bg_light;
+#pulseaudio,
+#clock {
   color: @fg;
 }
 
+#tray {
+  margin-right: 24px;
+}
+
 #workspaces {
-  margin-left: 6px;
   background: transparent;
   color: @fg;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-
 #workspaces button {
-  min-width: 16px;
-  min-height: 4px;
-  border-radius: 3px;
-  background: @bg_light;
+  min-width: 12px;
+  min-height: 8px;
+  border-radius: 8px;
+  margin: 0 2px;
+  outline: none;
   color: @fg;
-  margin: 6px;
-  transition: all 0.2s cubic-bezier(.58,-.59,.36,2.51);
-}
-
-#workspaces button.persistent {
-  background: @bg_light;
 }
 
 #workspaces button.active {
-  min-width: 22px;
-  min-height: 4px;
-  background: @color4;
-  color: @bg_light;
+  background: @color6;
+  color: @bg_dark;
 }
 
 #workspaces button.urgent {
-  background: @color9;
-  color: @bg_light;
+  background: @color1;
+  color: @bg_dark;
 }
 
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
-}
-#clock {
-  background: @color6;
-  color: @bg_light;
 }
 
 label:focus {
@@ -90,22 +79,11 @@ label:focus {
   color: @color1;
 }
 
-#tray > .passive {
+#tray>.passive {
   -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
   -gtk-icon-effect: highlight;
   background-color: @color1;
-}
-
-#custom-power {
-  border-radius: 3px;
-  margin-right: 12px;
-  margin-bottom: 6px;
-  margin-top: 6px;
-  margin-left: 6px;
-  color: @bg_light;
-  min-width: 32px;
-  background: @color1;
 }

@@ -1,0 +1,72 @@
+* {
+  font-family: "JetBrainsMono NF";
+  font-size: 12px;
+  box-shadow: none;
+}
+
+.bar {
+  background: $color0;
+  border-radius: 12px;
+}
+
+.cbox {
+  border-radius: 8px;
+  margin: 4px;
+  background: $bg-dark;
+}
+
+button {
+  padding: 0;
+  background: transparent;
+  min-width: 26px;
+
+  &:hover {
+    background: $bg-light;
+  }
+}
+
+.clock {
+  padding: 0 8px;
+
+  .icon {
+    color: $color2;
+  }
+
+  label {
+    color: $fg;
+  }
+}
+
+.workspaces {
+  button {
+    color: $color8;
+
+    &.occupied {
+      color: $fg;
+    }
+
+    &.active {
+      color: $color4;
+    }
+  }
+}
+
+.network {
+  padding: 0 8px;
+
+  .icon {
+    color: $color6;
+  }
+}
+
+.volume {
+  padding: 0 8px;
+
+  .icon {
+    color: $color3;
+  }
+
+  .muted {
+    color: $color8;
+  }
+}

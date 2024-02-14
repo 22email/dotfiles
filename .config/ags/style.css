@@ -1,0 +1,46 @@
+* {
+  font-family: "JetBrainsMono NF";
+  font-size: 12px;
+  box-shadow: none; }
+
+.bar {
+  background: #16161d;
+  border-radius: 12px; }
+
+.cbox {
+  border-radius: 8px;
+  margin: 4px;
+  background: #1f1f28; }
+
+button {
+  padding: 0;
+  background: transparent;
+  min-width: 26px; }
+  button:hover {
+    background: #31313a; }
+
+.clock {
+  padding: 0 8px; }
+  .clock .icon {
+    color: #76946a; }
+  .clock label {
+    color: #dcd7ba; }
+
+.workspaces button {
+  color: #727169; }
+  .workspaces button.occupied {
+    color: #dcd7ba; }
+  .workspaces button.active {
+    color: #7e9cd8; }
+
+.network {
+  padding: 0 8px; }
+  .network .icon {
+    color: #6a9589; }
+
+.volume {
+  padding: 0 8px; }
+  .volume .icon {
+    color: #c0a36e; }
+  .volume .muted {
+    color: #727169; }

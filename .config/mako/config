@@ -8,12 +8,13 @@ markup=1
 
 padding=8
 
-background-color=#191724
-progress-color=#eb6f92
-text-color=#e0def4
+background-color=#1f1f28
+progress-color=#6a9589
+text-color=#dcd7ba
 
-border-size=0
-border-radius=3
+border-size=3
+border-color=#16161d
+border-radius=12
 
 default-timeout=4000
 
