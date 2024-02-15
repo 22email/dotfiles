@@ -20,4 +20,4 @@ forgot
 - [x] Rewrite bar in ags
 - [ ] Rewrite network GUI in ags
 - [ ] Rewrite volume control in ags
-- [ ] Camera widget in ags
+- [ ] Calendar widget in ags

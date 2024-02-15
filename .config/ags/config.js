@@ -24,7 +24,6 @@ const Workspaces = () =>
       children: Array.from({ length: 10 }, (_, i) => i + 1).map((i) =>
         Widget.Button({
           attribute: i,
-          css: "min-width: 32px",
           child: Widget.Icon("media-record-symbolic"),
           setup: (self) =>
             self.hook(Hyprland, () => {
