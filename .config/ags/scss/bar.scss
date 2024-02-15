@@ -1,72 +1,73 @@
-* {
-  font-family: "JetBrainsMono NF";
-  font-size: 12px;
-  box-shadow: none;
-}
-
 .bar {
-  background: $color0;
-  border-radius: 12px;
-}
-
-.cbox {
-  border-radius: 8px;
-  margin: 4px;
-  background: $bg-dark;
-}
-
-button {
-  padding: 0;
-  background: transparent;
-  min-width: 26px;
-
-  &:hover {
-    background: $bg-light;
-  }
-}
-
-.clock {
-  padding: 0 8px;
-
-  .icon {
-    color: $color2;
+  * {
+    font-family: "JetBrainsMono NF";
+    font-size: 12px;
+    box-shadow: none;
   }
 
-  label {
-    color: $fg;
+  .cbox {
+    border-radius: 12px;
+    background: $bg-dark;
+    margin: 4px;
+    box-shadow: 0 0 4px 0 #000000;
+    border: 4px solid $color0;
   }
-}
 
-.workspaces {
   button {
-    color: $color8;
+    padding: 0 12px;
+    background: transparent;
+    border-radius: 6px;
+    min-width: 26px;
 
-    &.occupied {
+    &:hover {
+      background: $bg-light;
+    }
+  }
+
+  .clock {
+    .icon {
+      color: $color2;
+    }
+
+    label {
       color: $fg;
     }
+  }
 
-    &.active {
-      color: $color4;
+  .workspaces {
+    button {
+      padding: 0;
+      color: $color8;
+
+      &.occupied {
+        color: $fg;
+      }
+
+      &.active {
+        color: $color4;
+      }
     }
   }
-}
 
-.network {
-  padding: 0 8px;
-
-  .icon {
-    color: $color6;
-  }
-}
-
-.volume {
-  padding: 0 8px;
-
-  .icon {
-    color: $color3;
+  .tray {
+    button {
+      padding: 0;
+    }
   }
 
-  .muted {
-    color: $color8;
+  .network {
+    .icon {
+      color: $color6;
+    }
+  }
+
+  .volume {
+    .icon {
+      color: $color3;
+    }
+
+    .muted {
+      color: $color8;
+    }
   }
 }

@@ -1,46 +1,69 @@
-* {
+.bar * {
   font-family: "JetBrainsMono NF";
   font-size: 12px;
   box-shadow: none; }
 
-.bar {
-  background: #16161d;
-  border-radius: 12px; }
-
-.cbox {
-  border-radius: 8px;
+.bar .cbox {
+  border-radius: 12px;
+  background: #1f1f28;
   margin: 4px;
-  background: #1f1f28; }
+  box-shadow: 0 0 4px 0 #000000;
+  border: 4px solid #16161d; }
 
-button {
-  padding: 0;
+.bar button {
+  padding: 0 12px;
   background: transparent;
+  border-radius: 6px;
   min-width: 26px; }
-  button:hover {
-    background: #31313a; }
+  .bar button:hover {
+    background: #272730; }
 
-.clock {
-  padding: 0 8px; }
-  .clock .icon {
-    color: #76946a; }
-  .clock label {
-    color: #dcd7ba; }
+.bar .clock .icon {
+  color: #76946a; }
 
-.workspaces button {
+.bar .clock label {
+  color: #dcd7ba; }
+
+.bar .workspaces button {
+  padding: 0;
   color: #727169; }
-  .workspaces button.occupied {
+  .bar .workspaces button.occupied {
     color: #dcd7ba; }
-  .workspaces button.active {
+  .bar .workspaces button.active {
     color: #7e9cd8; }
 
-.network {
-  padding: 0 8px; }
-  .network .icon {
-    color: #6a9589; }
+.bar .tray button {
+  padding: 0; }
 
-.volume {
-  padding: 0 8px; }
-  .volume .icon {
-    color: #c0a36e; }
-  .volume .muted {
-    color: #727169; }
+.bar .network .icon {
+  color: #6a9589; }
+
+.bar .volume .icon {
+  color: #c0a36e; }
+
+.bar .volume .muted {
+  color: #727169; }
+
+.cal-win {
+  font-family: "JetBrainsMono NF"; }
+  .cal-win * {
+    box-shadow: none;
+    outline: none; }
+  .cal-win .cal-box {
+    box-shadow: 0 0 4px 0 #000000;
+    border-radius: 12px;
+    border: 4px solid #16161d;
+    margin: 4;
+    font-size: 0.9em;
+    background: #1f1f28; }
+    .cal-win .cal-box .cal {
+      border-radius: 12px;
+      border: none;
+      margin: 4px; }
+
+calendar:selected {
+  color: #76946a;
+  background: transparent; }
+
+calendar.header {
+  color: #7e9cd8; }
