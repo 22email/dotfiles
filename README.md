@@ -13,11 +13,3 @@ forgot
 
 ## Notes
 
-- No bluetooth
-
-## TODO
-
-- [x] Rewrite bar in ags
-- [ ] Rewrite network GUI in ags
-- [ ] Rewrite volume control in ags
-- [ ] Calendar widget in ags

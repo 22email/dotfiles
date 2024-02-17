@@ -5,34 +5,35 @@ import { Volume } from "./Volume.js";
 import { BatteryLabel } from "./BatteryLabel.js";
 import { NetworkButton } from "./NetworkButton.js";
 import { SysTray } from "./SysTray.js";
+import { PowerButton } from "./PowerButton.js";
 
 const Left = () =>
   Widget.Box({
-    css: "margin: 3 8px",
-    spacing: 8,
-    children: [Clock()],
-  });
-const Center = () =>
-  Widget.Box({
-    css: "margin: 3 8px",
+    css: "margin: 0.2em 1em",
     spacing: 8,
     children: [Workspaces()],
   });
+const Center = () =>
+  Widget.Box({
+    css: "margin: 0.2em 1em",
+    spacing: 8,
+    children: [Clock()],
+  });
 const Right = () =>
   Widget.Box({
-    css: "margin: 3 8px",
+    css: "margin: 0.2em 1em",
     hpack: "end",
     spacing: 8,
-    children: [SysTray(), BatteryLabel(), NetworkButton(), Volume()],
+    children: [SysTray(), NetworkButton(), BatteryLabel(), Volume(), PowerButton()],
   });
 export const Bar = (monitor = 0) =>
   Widget.Window({
     name: `bar-${monitor}`, // name has to be unique
     class_name: "bar",
     monitor,
-    anchor: ["bottom", "left", "right"],
+    anchor: ["top", "left", "right"],
     exclusivity: "exclusive",
-    margins: [0, 12, 12],
+    margins: [4, 4, 0],
     child: Widget.CenterBox({
       class_name: "cbox",
       start_widget: Left(),

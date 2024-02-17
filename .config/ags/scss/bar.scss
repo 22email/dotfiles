@@ -1,7 +1,13 @@
+@keyframes spin {
+  to {
+    -gtk-icon-transform: rotate(1turn);
+  }
+}
+
 .bar {
   * {
-    font-family: "JetBrainsMono NF";
-    font-size: 12px;
+    font-family: "Iosevka NF";
+    font-size: 1em;
     box-shadow: none;
   }
 
@@ -9,24 +15,25 @@
     border-radius: 12px;
     background: $bg-dark;
     margin: 4px;
-    box-shadow: 0 0 4px 0 #000000;
-    border: 4px solid $color0;
+    box-shadow: 0 0 2px 2px #000000;
+    border: 2px solid $color0;
   }
 
   button {
-    padding: 0 12px;
+    padding: 0 0.8em;
     background: transparent;
+     // background: blue;
     border-radius: 6px;
-    min-width: 26px;
+    min-width: 1.8em;
 
     &:hover {
-      background: $bg-light;
+      background: $hover;
     }
   }
 
   .clock {
     .icon {
-      color: $color2;
+      color: $color14;
     }
 
     label {
@@ -34,8 +41,7 @@
     }
   }
 
-  .workspaces {
-    button {
+  .workspaces { button {
       padding: 0;
       color: $color8;
 
@@ -44,30 +50,78 @@
       }
 
       &.active {
-        color: $color4;
+        color: $color3;
       }
     }
   }
 
   .tray {
     button {
-      padding: 0;
+      &:first-child {
+        margin-left: 4px;
+      }
+
+      &:last-child {
+        margin-right: 4px;
+      }
+
+      padding: 0px;
+      min-width: 24px;
+      min-height: 8px;
+
+      margin: 2px 0px;
+
+      image {
+        font-size: 10px;
+      }
+
+      &:hover {
+        color: $hover;
+      }
+    }
+
+    border-radius: 6px;
+    min-width: 32px;
+    background: $bg-light;
+  }
+
+  .tray-button {
+    padding: 0;
+
+    .icon {
+      font-size: 1.2em;
+      transition: all 0.2s cubic-bezier(1, 1, 1, 1);
+
+      &.showing {
+        -gtk-icon-transform: rotate(180deg);
+      }
     }
   }
 
   .network {
     .icon {
-      color: $color6;
+      color: $color12;
     }
   }
 
   .volume {
     .icon {
-      color: $color3;
+      color: $color2;
     }
 
     .muted {
       color: $color8;
+    }
+  }
+
+  .power-button {
+    padding: 0;
+
+    .icon {
+      font-size: 0.8em;
+      color: $color1;
+      margin-left: 1px; // Why do I have to do this dawg
+      margin-bottom: 1px; // Why do I have to do this dawg
     }
   }
 }

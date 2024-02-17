@@ -1,25 +1,29 @@
+@keyframes spin {
+  to {
+    -gtk-icon-transform: rotate(1turn); } }
+
 .bar * {
-  font-family: "JetBrainsMono NF";
-  font-size: 12px;
+  font-family: "Iosevka NF";
+  font-size: 1em;
   box-shadow: none; }
 
 .bar .cbox {
   border-radius: 12px;
   background: #1f1f28;
   margin: 4px;
-  box-shadow: 0 0 4px 0 #000000;
-  border: 4px solid #16161d; }
+  box-shadow: 0 0 2px 2px #000000;
+  border: 2px solid #16161d; }
 
 .bar button {
-  padding: 0 12px;
+  padding: 0 0.8em;
   background: transparent;
   border-radius: 6px;
-  min-width: 26px; }
+  min-width: 1.8em; }
   .bar button:hover {
-    background: #272730; }
+    background: #31313a; }
 
 .bar .clock .icon {
-  color: #76946a; }
+  color: #7aa89f; }
 
 .bar .clock label {
   color: #dcd7ba; }
@@ -30,33 +34,65 @@
   .bar .workspaces button.occupied {
     color: #dcd7ba; }
   .bar .workspaces button.active {
-    color: #7e9cd8; }
+    color: #c0a36e; }
 
-.bar .tray button {
+.bar .tray {
+  border-radius: 6px;
+  min-width: 32px;
+  background: #272730; }
+  .bar .tray button {
+    padding: 0px;
+    min-width: 24px;
+    min-height: 8px;
+    margin: 2px 0px; }
+    .bar .tray button:first-child {
+      margin-left: 4px; }
+    .bar .tray button:last-child {
+      margin-right: 4px; }
+    .bar .tray button image {
+      font-size: 10px; }
+    .bar .tray button:hover {
+      color: #31313a; }
+
+.bar .tray-button {
   padding: 0; }
+  .bar .tray-button .icon {
+    font-size: 1.2em;
+    transition: all 0.2s cubic-bezier(1, 1, 1, 1); }
+    .bar .tray-button .icon.showing {
+      -gtk-icon-transform: rotate(180deg); }
 
 .bar .network .icon {
-  color: #6a9589; }
+  color: #7fb4ca; }
 
 .bar .volume .icon {
-  color: #c0a36e; }
+  color: #76946a; }
 
 .bar .volume .muted {
   color: #727169; }
 
-.cal-win {
-  font-family: "JetBrainsMono NF"; }
-  .cal-win * {
+.bar .power-button {
+  padding: 0; }
+  .bar .power-button .icon {
+    font-size: 0.8em;
+    color: #c34043;
+    margin-left: 1px;
+    margin-bottom: 1px; }
+
+window#cal-window {
+  font-family: "Iosevka NF";
+  background: transparent; }
+  window#cal-window * {
     box-shadow: none;
     outline: none; }
-  .cal-win .cal-box {
-    box-shadow: 0 0 4px 0 #000000;
+  window#cal-window .cal-box {
+    box-shadow: 0 0 2px 2px #000000;
     border-radius: 12px;
-    border: 4px solid #16161d;
+    border: 2px solid #16161d;
     margin: 4;
     font-size: 0.9em;
     background: #1f1f28; }
-    .cal-win .cal-box .cal {
+    window#cal-window .cal-box .cal {
       border-radius: 12px;
       border: none;
       margin: 4px; }
@@ -66,4 +102,58 @@ calendar:selected {
   background: transparent; }
 
 calendar.header {
-  color: #7e9cd8; }
+  color: #7aa89f; }
+
+window#notifications {
+  all: unset;
+  font-family: "Iosevka NF"; }
+  window#notifications box.notifications {
+    padding: 0.5em; }
+  window#notifications .icon {
+    min-width: 32px;
+    min-height: 32px;
+    margin-right: 1em; }
+    window#notifications .icon image {
+      font-size: 58px;
+      margin: 5px;
+      color: #dcd7ba; }
+    window#notifications .icon box {
+      min-width: 68px;
+      min-height: 68px;
+      border-radius: 7px; }
+  window#notifications .notification {
+    min-width: 300px;
+    border-radius: 12px;
+    padding: 1em;
+    margin: 0.5em;
+    border: 2px solid #16161d;
+    box-shadow: 0 0 4px 4px #000000;
+    background-color: #1f1f28; }
+  window#notifications .notification.critical {
+    border: 2px solid #c34043; }
+  window#notifications .title {
+    color: #dcd7ba;
+    font-weight: bold;
+    font-size: 1.2em; }
+  window#notifications .body {
+    color: #dcd7ba; }
+  window#notifications .actions .action-button {
+    margin: 0 0.4em;
+    margin-top: 0.8em; }
+    window#notifications .actions .action-button:first-child {
+      margin-left: 0; }
+    window#notifications .actions .action-button:last-child {
+      margin-right: 0; }
+
+window#michael {
+  background: transparent; }
+  window#michael .michael-box {
+    min-width: 200px;
+    min-height: 200px;
+    margin: 0.8em;
+    border: 2px solid #16161d;
+    border-radius: 12px;
+    box-shadow: 0 0 4px 4px #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }

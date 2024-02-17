@@ -1,7 +1,8 @@
 // Styling GTK calendars is a pain
 // I have no clue if I'm doing this right
-.cal-win {
-  font-family: "JetBrainsMono NF";
+window#cal-window {
+  font-family: "Iosevka NF";
+  background: transparent;
 
   * {
     box-shadow: none;
@@ -9,9 +10,9 @@
   }
 
   .cal-box {
-    box-shadow: 0 0 4px 0 #000000;
+    box-shadow: 0 0 2px 2px #000000;
     border-radius: 12px;
-    border: 4px solid $color0;
+    border: 2px solid $color0;
     margin: 4;
     font-size: 0.9em;
     background: $bg-dark;
@@ -30,5 +31,5 @@ calendar:selected {
 }
 
 calendar.header {
-  color: $color4;
+  color: $color14;
 }

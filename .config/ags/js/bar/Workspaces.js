@@ -14,8 +14,10 @@ export const Workspaces = () =>
           child: Widget.Icon("media-record-symbolic"),
           setup: (self) =>
             self.hook(Hyprland, () => {
-              let active = Hyprland.active.workspace.id === i;
-              self.toggleClassName("active", active);
+              self.toggleClassName(
+                "active",
+                Hyprland.active.workspace.id === i,
+              );
               self.toggleClassName(
                 "occupied",
                 (Hyprland.getWorkspace(i)?.windows || 0) > 0,

@@ -5,6 +5,7 @@ import { execAsync } from "resource:///com/github/Aylur/ags/utils.js";
 const WifiIndicator = () =>
   Widget.Box({
     hpack: "center",
+    spacing: 8,
     children: [
       Widget.Icon({
         icon: Network.wifi.bind("icon_name"),
