@@ -13,3 +13,5 @@ forgot
 
 ## Notes
 
+## TODO
+- Make ags power menu
