@@ -29,7 +29,7 @@ const NotificationIcon = ({ app_entry, app_icon, image }) => {
 /** @param {import('resource:///com/github/Aylur/ags/service/notifications.js').Notification} n */
 const Notification = (n) => {
   const icon = Widget.Box({
-    vpack: "start",
+    vpack: "center",
     class_name: "icon",
     children: [NotificationIcon(n)],
   });
@@ -92,7 +92,6 @@ const Notification = (n) => {
 export const NotificationPopup = Widget.Window({
   name: "notifications",
   class_name: "notif-window",
-  margins: [16],
   anchor: ["top", "right"],
   child: Widget.Box({
     class_name: "notifications",

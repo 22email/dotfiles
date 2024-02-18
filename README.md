@@ -14,4 +14,6 @@ forgot
 ## Notes
 
 ## TODO
+
 - Make ags power menu
+- LOL I DID THIS AT 2 AM WHAT AM I DOING BRO

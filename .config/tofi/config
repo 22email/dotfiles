@@ -1,4 +1,4 @@
-	font = "/usr/share/fonts/JetBrainsMono/JetBrainsMonoNerdFont-Regular.ttf"
+	font = "/usr/share/fonts/Iosevka/IosevkaNerdFont-Medium.ttf"
 	font-size = 10
 	hint-font = true
   corner-radius = 60
@@ -11,8 +11,8 @@
 	background-color = #1f1f28
 	outline-width = 0
   border-color = #16161d
-	border-width = 3
-	corner-radius = 8
+	border-width = 4
+	corner-radius = 12
 	clip-to-padding = true
 	scale = true
 	anchor = center
