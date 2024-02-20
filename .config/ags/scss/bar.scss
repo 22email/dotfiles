@@ -11,13 +11,14 @@
     margin: 4px;
     box-shadow: 0 0 2px 2px #000000;
     border: 2px solid $color0;
+    padding: 0.2em;
   }
 
   button {
     padding: 0 0.8em;
-    background: transparent;
+    background: $bg-light;
     border-radius: 6px;
-    min-width: 1.8em;
+    min-width: 1.9em;
 
     &:hover {
       background: $hover;
@@ -34,9 +35,21 @@
     }
   }
 
-  .workspaces { button {
+  .workspaces {
+    background: $bg-light;
+    border-radius: 8px;
+
+    button {
       padding: 0;
       color: $color8;
+      margin: 2px 0;
+
+      &:first-child {
+        margin-left: 4px;
+      }
+      &:last-child {
+        margin-right: 4px;
+      }
 
       &.occupied {
         color: $fg;

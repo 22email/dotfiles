@@ -6,7 +6,7 @@ export const ImageWindow = () =>
     popup: true,
     visible: false,
     layer: "background",
-    anchor: ["bottom", "left"],
+    anchor: ["bottom"],
     // TODO: make this change dynamically or something 
     child: Widget.Box({
       css: 'background-image: url("/home/Kevin/dotfiles/wallpapers/michael.png");',

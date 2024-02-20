@@ -8,13 +8,14 @@
   background: #1f1f28;
   margin: 4px;
   box-shadow: 0 0 2px 2px #000000;
-  border: 2px solid #16161d; }
+  border: 2px solid #16161d;
+  padding: 0.2em; }
 
 .bar button {
   padding: 0 0.8em;
-  background: transparent;
+  background: #272730;
   border-radius: 6px;
-  min-width: 1.8em; }
+  min-width: 1.9em; }
   .bar button:hover {
     background: #31313a; }
 
@@ -24,13 +25,21 @@
 .bar .clock label {
   color: #dcd7ba; }
 
-.bar .workspaces button {
-  padding: 0;
-  color: #727169; }
-  .bar .workspaces button.occupied {
-    color: #dcd7ba; }
-  .bar .workspaces button.active {
-    color: #c0a36e; }
+.bar .workspaces {
+  background: #272730;
+  border-radius: 8px; }
+  .bar .workspaces button {
+    padding: 0;
+    color: #727169;
+    margin: 2px 0; }
+    .bar .workspaces button:first-child {
+      margin-left: 4px; }
+    .bar .workspaces button:last-child {
+      margin-right: 4px; }
+    .bar .workspaces button.occupied {
+      color: #dcd7ba; }
+    .bar .workspaces button.active {
+      color: #c0a36e; }
 
 .bar .tray {
   border-radius: 6px;
@@ -122,7 +131,7 @@ window#notifications {
     padding: 1em;
     margin: 1em;
     border: 2px solid #16161d;
-    box-shadow: 0 0 4px 4px #000000;
+    box-shadow: 0 0 2px 2px #000000;
     background-color: #1f1f28; }
   window#notifications .notification.critical {
     border: 2px solid #c34043; }
@@ -161,39 +170,37 @@ window#power-menu {
     padding: 0.2em;
     background: #1f1f28;
     margin: 0.8em;
-    box-shadow: 0 0 2px 2px #000000;
     border: 2px solid #16161d;
+    box-shadow: 0 0 2px 2px #000000;
     border-radius: 12px; }
     window#power-menu .power-outer-box label {
-      margin: 0.4em;
       padding: 2em;
+      margin: 0.4em 0 0.4em 0.4em;
       border-radius: 12px;
       font-family: "Iosevka NF";
       font-size: 2em;
       color: #dcd7ba;
-      text-shadow: 0px 0px 4px #000000;
+      text-shadow: 0px 8px 8px #000000;
       background-size: cover; }
   window#power-menu .power-inner-box {
-    background: #1f1f28;
-    margin: 0.8em; }
+    margin: 0.8em 0.4em 0.8em 0;
+    background: #1f1f28; }
     window#power-menu .power-inner-box button {
-      background: transparent;
+      background: #272730;
       font-size: 2em;
       border-radius: 0.4em;
       padding: 1em;
       box-shadow: none;
-      margin: 4px 0px; }
+      margin: 0px 4px; }
       window#power-menu .power-inner-box button:focus {
         background: #31313a; }
       window#power-menu .power-inner-box button:hover {
         background: #31313a; }
       window#power-menu .power-inner-box button:nth-child(1) {
-        margin-left: 8px;
         color: #c34043; }
       window#power-menu .power-inner-box button:nth-child(2) {
         color: #76946a; }
       window#power-menu .power-inner-box button:nth-child(3) {
         color: #c0a36e; }
       window#power-menu .power-inner-box button:nth-child(4) {
-        margin-right: 8px;
         color: #7e9cd8; }

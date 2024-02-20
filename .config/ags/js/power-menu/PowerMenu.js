@@ -29,7 +29,7 @@ export const PowerMenu = () =>
     visible: false,
     keymode: "exclusive",
     child: Widget.Box({
-      vertical: true,
+      spacing: 12,
       class_name: "power-outer-box",
       children: [
         Widget.Label({
@@ -43,6 +43,7 @@ export const PowerMenu = () =>
         }),
         Widget.Box({
           class_name: "power-inner-box",
+          vertical: true,
           spacing: 8,
           children: [
             PowerButton("systemctl poweroff", "system-shutdown-symbolic"),
@@ -52,7 +53,7 @@ export const PowerMenu = () =>
               "system-lock-screen-symbolic",
             ),
             PowerButton(
-              "loginctl terminate-user $USER",
+              `bash -c "loginctl terminate-user $USER"`,
               "application-exit-symbolic",
             ),
           ],

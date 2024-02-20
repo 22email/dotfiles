@@ -7,7 +7,7 @@ export const Workspaces = () =>
   Widget.EventBox({
     class_name: "workspaces",
     child: Widget.Box({
-      spacing: 2,
+      spacing: 4,
       children: Array.from({ length: 10 }, (_, i) => i + 1).map((i) =>
         Widget.Button({
           attribute: i,

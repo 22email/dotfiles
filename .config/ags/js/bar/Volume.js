@@ -11,7 +11,8 @@ export const Volume = () =>
     class_name: "volume",
     onScrollUp: increaseVolume,
     onScrollDown: () => (Audio.speaker.volume -= 0.02), // Lower end of volume caps out at 0; no need for utility function
-    onClicked: () => execAsync("pavucontrol"),
+    on_primary_click: () => execAsync("pavucontrol"),
+    on_secondary_click: () => Audio.speaker.is_muted = !Audio.speaker.is_muted,
     child: Widget.Box({
       hpack: "center",
       spacing: 8,

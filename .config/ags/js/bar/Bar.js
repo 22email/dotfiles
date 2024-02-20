@@ -9,19 +9,19 @@ import { PowerButton } from "./PowerButton.js";
 
 const Left = () =>
   Widget.Box({
-    css: "margin: 0.2em 1em",
+    css: "margin: 0.2em 0.7em",
     spacing: 8,
     children: [Workspaces()],
   });
 const Center = () =>
   Widget.Box({
-    css: "margin: 0.2em 1em",
+    css: "margin: 0.2em 0.7em",
     spacing: 8,
     children: [Clock()],
   });
 const Right = () =>
   Widget.Box({
-    css: "margin: 0.2em 1em",
+    css: "margin: 0.2em 0.7em",
     hpack: "end",
     spacing: 8,
     children: [SysTray(), NetworkButton(), BatteryLabel(), Volume(), PowerButton()],

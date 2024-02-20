@@ -6,34 +6,34 @@ window#power-menu {
     padding: 0.2em;
     background: $bg-dark;
     margin: 0.8em;
-    box-shadow: 0 0 2px 2px #000000;
     border: 2px solid $color0;
+    box-shadow: 0 0 2px 2px #000000;
     border-radius: 12px;
 
     label {
-      margin: 0.4em;
       padding: 2em;
+      margin: 0.4em 0 0.4em 0.4em;
       border-radius: 12px;
       font-family: "Iosevka NF";
       font-size: 2em;
       color: $fg;
-      text-shadow: 0px 0px 4px #000000;
+      text-shadow: 0px 8px 8px #000000;
       background-size: cover;
     }
   }
 
   .power-inner-box {
+    margin: 0.8em 0.4em 0.8em 0;
     background: $bg-dark;
-    margin: 0.8em;
 
     button {
-      background: transparent;
+      background: $bg-light;
       font-size: 2em;
       border-radius: 0.4em;
       padding: 1em;
       box-shadow: none;
 
-      margin: 4px 0px;
+      margin: 0px 4px;
 
       &:focus {
         background: $hover;
@@ -44,7 +44,6 @@ window#power-menu {
       }
 
       &:nth-child(1) {
-        margin-left: 8px;
         color: $color1;
       }
 
@@ -57,7 +56,6 @@ window#power-menu {
       }
 
       &:nth-child(4) {
-        margin-right: 8px;
         color: $color4;
       }
     }
