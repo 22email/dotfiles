@@ -31,11 +31,10 @@ export const PowerMenu = () =>
     child: Widget.Box({
       spacing: 12,
       class_name: "power-outer-box",
+      vertical: true,
       children: [
         Widget.Label({
-          label: "Goodbye!",
-          // I could make a service to change the image while the menu is loaded but
-          // its not possible to make any other input while this menu is loaded so...
+          label: "You should sleep.",
           setup: (self) =>
             self.hook(wall, () => {
               self.css = `background-image: url("${wall.getValue()}")`;
@@ -43,7 +42,6 @@ export const PowerMenu = () =>
         }),
         Widget.Box({
           class_name: "power-inner-box",
-          vertical: true,
           spacing: 8,
           children: [
             PowerButton("systemctl poweroff", "system-shutdown-symbolic"),
