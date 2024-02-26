@@ -1,0 +1,11 @@
+#!/bin/sh
+
+chosen=$(echo "Power Off\nRestart\nLock\nLogout" | dmenu)
+
+case "$chosen" in 
+  "Power Off") sudo poweroff ;;
+  "Restart") sudo reboot ;;
+  "Lock") slock ;;
+  "Logout") loginctl kill-user $USER ;;
+  *) exit 1 ;;
+esac

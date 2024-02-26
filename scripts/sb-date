@@ -1,14 +1,8 @@
 #!/bin/sh
 # Displays the current time in HH:MM:SS (AM|PM)
 
-launch_cal() {
-  eww close power 2>/dev/null
-  eww open --toggle calwin
-}
-
 case $BLOCK_BUTTON in
-    1) launch_cal ;;
     6) "$TERMINAL" -e "$EDITOR" "$0" ;;
 esac
 
-echo " 󰥔 $(date '+%I:%M %p') "
+echo " $(date '+%H:%M') "

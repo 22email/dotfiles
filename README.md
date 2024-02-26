@@ -1,11 +1,8 @@
 # My Suckless System
 
-`"kind of bloated"`
+`sucks slightly less`
 
 ## Screenshots
-
-![Busy](screenshots/busy.png)
-![Empty](screenshots/empty.png)
 
 ## Info
 
@@ -18,15 +15,18 @@
 - shell: mksh/dash
 - editor: NvChad (Neovim)
 - notifs: dunst
-- compositor: compfy
-- widgets: eww
+- compositor: compfy (I have this off most of the time)
 
 ## Credit
 
-- `sb-internet` is modified from [Luke Smith's script](https://github.com/LukeSmithxyz/voidrice/blob/master/.local/bin/statusbar/sb-internet)
-- `sb-volume sb-battery, and sb-date` are modified from [Utkarsh Varma's scripts](https://github.com/UtkarshVerma/dotfiles/tree/main/.local/bin/statusbar)
+- statusbar scripts are modified from [Utkarsh Varma's scripts](https://github.com/UtkarshVerma/dotfiles/tree/main/.local/bin/statusbar)
+- Wallpapers from dkeg (this guy is so awesome)
 
 ## Other
 
 - My suckless repo: https://github.com/22email/suckless
 - My NvChad config: https://github.com/22email/nvchad-config
+
+## TODO
+
+- [ ] Use and make scripts for scrot instead of flameshot

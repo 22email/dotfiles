@@ -14,22 +14,10 @@ case $BLOCK_BUTTON in
 esac
 
 if [ "$(pamixer --get-mute)" = true ]; then
-    echo " 󰝟 " 
+    echo " VOL MUT " 
     exit
 fi
 
 vol="$(pamixer --get-volume)"
-[ $? -ne 0 ] && [ -z "$vol" ] && exit 1
 
-if [ "$vol" -gt 40 ]; then
-    icon=" "
-elif [ "$vol" -gt 15 ]; then
-    icon=""
-else
-    icon=""
-fi
-
-echo " $icon $vol% "
-
-# eb6f92
-
+echo " VOL $vol% "
