@@ -5,7 +5,7 @@ import { lookUpIcon } from "resource:///com/github/Aylur/ags/utils.js";
 
 /** @param {import('resource:///com/github/Aylur/ags/service/notifications.js').Notification} n */
 const NotificationIcon = ({ app_entry, app_icon, image }) => {
-  print(image)
+  print(image);
 
   if (image) {
     return Widget.Box({
@@ -79,6 +79,7 @@ const Notification = (n) => {
             icon,
             Widget.Box({
               vertical: true,
+              spacing: 2,
               children: [title, body],
             }),
           ],
@@ -92,7 +93,8 @@ const Notification = (n) => {
 export const NotificationPopup = Widget.Window({
   name: "notifications",
   class_name: "notif-window",
-  anchor: ["top", "right"],
+  anchor: ["bottom", "right"],
+  margins: [4, 4, 0],
   child: Widget.Box({
     class_name: "notifications",
     vertical: true,

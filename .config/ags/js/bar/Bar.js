@@ -1,14 +1,12 @@
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { Workspaces } from "./Workspaces.js";
 import { Clock } from "./Clock.js";
-import { Volume } from "./Volume.js";
-import { BatteryLabel } from "./BatteryLabel.js";
-import { NetworkButton } from "./NetworkButton.js";
 import { SysTray } from "./SysTray.js";
-import { PowerButton } from "./PowerButton.js";
+import { ControlButton } from "./ControlButton.js";
 
 const Left = () =>
   Widget.Box({
+    hpack: "start",
     css: "margin: 0.2em 0.7em",
     spacing: 8,
     children: [Workspaces()],
@@ -24,7 +22,10 @@ const Right = () =>
     css: "margin: 0.2em 0.7em",
     hpack: "end",
     spacing: 8,
-    children: [SysTray(), NetworkButton(), BatteryLabel(), Volume(), PowerButton()],
+    children: [
+      SysTray(),
+      ControlButton(),
+    ],
   });
 export const Bar = (monitor = 0) =>
   Widget.Window({

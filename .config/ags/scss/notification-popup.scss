@@ -2,33 +2,34 @@ window#notifications {
   all: unset;
   font-family: "Iosevka NF";
 
-  box.notifications {
-    padding: 1em;
+  .notifications {
+    padding: 0.1px;
   }
 
   .icon {
     min-width: 68px;
-    min-height: 32px;
-    margin-right: 0.8em;
-   
-
-    image {
-      font-size: 52px;
-      margin: 9px;
-      color: $fg;
-    }
+    min-height: 68px;
+    margin-right: 1em;
 
     box {
       min-width: 68px;
-      min-height: 32px;
+      min-height: 68px;
+      border-radius: 7px;
+    }
+
+    image {
+      font-size: 52px;
+      margin: 5px;
+      margin: 5px;
+      color: $fg;
     }
   }
 
   .notification {
-    min-width: 300px;
+    min-width: 330px;
     border-radius: 12px;
-    padding: 1em;
-    margin: 1em;
+    padding: 0.8em;
+    margin: 0.4em;
     border: 2px solid $color0;
     box-shadow: 0 0 2px 2px #000000;
     background-color: $bg-dark;

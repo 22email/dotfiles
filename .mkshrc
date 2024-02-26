@@ -46,6 +46,5 @@ function cdd {
   fi
 }
 
+set -o vi
 cd "$PWD"
-
-

@@ -1,14 +1,16 @@
 .bar {
   * {
     font-family: "Iosevka NF";
-    font-size: 1em;
+    font-size: 0.98em;
     box-shadow: none;
+    border: none;
+    text-shadow: none;
   }
 
   .cbox {
     border-radius: 12px;
     background: $bg-dark;
-    margin: 4px;
+    margin: 0.4em;
     box-shadow: 0 0 2px 2px #000000;
     border: 2px solid $color0;
     padding: 0.2em;
@@ -18,7 +20,7 @@
     padding: 0 0.8em;
     background: $bg-light;
     border-radius: 6px;
-    min-width: 1.9em;
+    min-width: 2em;
 
     &:hover {
       background: $hover;
@@ -44,19 +46,32 @@
       color: $color8;
       margin: 2px 0;
 
-      &:first-child {
-        margin-left: 4px;
-      }
-      &:last-child {
-        margin-right: 4px;
+      box {
+        transition: all 0.4s cubic-bezier(0.17, 0.67, 0.24, 1.46);
+        margin: 0.7em;
+        background: $color8;
+        border-radius: 1em;
       }
 
       &.occupied {
-        color: $fg;
+        box {
+          background: $fg;
+        }
       }
 
       &.active {
-        color: $color3;
+        box {
+          background: $color3;
+          min-width: 2em;
+        }
+      }
+
+      &:first-child {
+        margin-left: 4px;
+      }
+
+      &:last-child {
+        margin-right: 4px;
       }
     }
   }
@@ -104,30 +119,22 @@
     }
   }
 
-  .network {
+  .control-button {
     .icon {
-      color: $color12;
-    }
-  }
+      &.network {
+        color: $color5;
+        margin-top: 1px;
+      }
 
-  .volume {
-    .icon {
-      color: $color2;
-    }
+      &.volume {
+        color: $color2;
+      }
 
-    .muted {
-      color: $color8;
-    }
-  }
-
-  .power-button {
-    padding: 0;
-
-    .icon {
-      font-size: 0.8em;
-      color: $color1;
-      margin-left: 1px; // Why do I have to do this dawg
-      margin-bottom: 1px; // Why do I have to do this dawg
+      &.power {
+        margin-top: 1px;
+        font-size: 0.9em;
+        color: $color1;
+      }
     }
   }
 }

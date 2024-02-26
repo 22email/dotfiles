@@ -3,8 +3,8 @@ import { Bar } from "./js/bar/Bar.js";
 import { Cal } from "./js/calendar/Cal.js";
 import { NotificationPopup } from "./js/notifs/NotificationPopup.js";
 import { ImageWindow } from "./js/image-window/ImageWindow.js";
-import { PowerMenu } from "./js/power-menu/PowerMenu.js";
-import { exec, timeout } from 'resource:///com/github/Aylur/ags/utils.js';
+import { ControlPanel } from "./js/control-panel/ControlPanel.js";
+// import { execAsync, timeout } from "resource:///com/github/Aylur/ags/utils.js";
 
 const scss = `${App.configDir}/scss/style.scss`;
 const css = `${App.configDir}/style.css`;
@@ -18,7 +18,7 @@ export default {
     Bar(),
     Cal(),
     ImageWindow(),
-    PowerMenu(),
+    ControlPanel(),
     NotificationPopup,
     // you can call it, for each monitor
     // Bar(0),

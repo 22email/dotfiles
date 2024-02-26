@@ -1,16 +1,12 @@
-	font = "/usr/share/fonts/Iosevka/IosevkaNerdFont-Medium.ttf"
-	font-size = 10
+	font = "/usr/share/fonts/Iosevka/IosevkaNerdFont-Regular.ttf"
+	font-size = 11
 	hint-font = true
   corner-radius = 60
-	text-color = #dcd7ba
-	selection-color = #6a9589
 	width = 20%
 	height = 20%
   result-spacing = 15
   horizontal = false
-	background-color = #1f1f28
 	outline-width = 0
-  border-color = #16161d
 	border-width = 4
 	corner-radius = 12
 	clip-to-padding = true
@@ -29,3 +25,5 @@
 	late-keyboard-init = false
 	multi-instance = true 
 	ascii-input = true
+
+  include = "/home/Kevin/.config/tofi/themes/rosepine"

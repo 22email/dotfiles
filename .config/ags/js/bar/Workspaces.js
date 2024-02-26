@@ -11,7 +11,7 @@ export const Workspaces = () =>
       children: Array.from({ length: 10 }, (_, i) => i + 1).map((i) =>
         Widget.Button({
           attribute: i,
-          child: Widget.Icon("media-record-symbolic"),
+          child: Widget.Box({}),
           setup: (self) =>
             self.hook(Hyprland, () => {
               self.toggleClassName(

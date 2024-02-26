@@ -1,0 +1,114 @@
+window#control-panel {
+  all: unset;
+
+  * {
+    font-family: "Iosevka NF";
+  }
+
+  .control-box {
+    background: $bg-dark;
+    margin: 0.4em;
+    border-radius: 12px;
+    box-shadow: 0 0 2px 2px #000000;
+    border: 2px solid $color0;
+    padding: 0.8em;
+  }
+
+  .power-box {
+
+    button {
+      background: $bg-light;
+      box-shadow: none;
+      min-width: 1.2em;
+      font-size: 0.9em;
+
+      &:focus {
+        background: $hover;
+      }
+
+      &:hover {
+        background: $hover;
+      }
+
+      &:nth-child(1) {
+        color: $color1;
+      }
+
+      &:nth-child(2) {
+        color: $color2;
+      }
+
+      &:nth-child(3) {
+        color: $color3;
+      }
+
+      &:nth-child(4) {
+        color: $color4;
+      }
+    }
+  }
+
+  .uptime {
+    color: $fg;
+  }
+
+  .audio-slider {
+    background: $bg-light;
+    padding: 0 0.8em;
+    border-radius: 8px;
+
+    scale {
+      trough {
+        slider {
+          background: none;
+          box-shadow: none;
+        }
+
+        min-height: 0.8em;
+        border-radius: 8px;
+
+        highlight {
+          border-radius: 8px;
+        }
+
+        background: $color8;
+      }
+    }
+
+    &.speaker {
+      .icon {
+        color: $color2;
+      }
+
+      scale {
+        trough {
+          highlight {
+            background: $color2;
+          }
+        }
+      }
+    }
+
+    &.microphone {
+      .icon {
+        color: $color4;
+      }
+
+      scale {
+        trough {
+          highlight {
+            background: $color4;
+          }
+        }
+      }
+    }
+  }
+
+  .wifi {
+    background: $bg-light;
+
+    .icon {
+      color: $color5;
+    }
+  }
+}

@@ -1,50 +1,58 @@
 .bar * {
   font-family: "Iosevka NF";
-  font-size: 1em;
-  box-shadow: none; }
+  font-size: 0.98em;
+  box-shadow: none;
+  border: none;
+  text-shadow: none; }
 
 .bar .cbox {
   border-radius: 12px;
-  background: #1f1f28;
-  margin: 4px;
+  background: #191724;
+  margin: 0.4em;
   box-shadow: 0 0 2px 2px #000000;
-  border: 2px solid #16161d;
+  border: 2px solid #13111e;
   padding: 0.2em; }
 
 .bar button {
   padding: 0 0.8em;
-  background: #272730;
+  background: #26233a;
   border-radius: 6px;
-  min-width: 1.9em; }
+  min-width: 2em; }
   .bar button:hover {
-    background: #31313a; }
+    background: #353340; }
 
 .bar .clock .icon {
-  color: #7aa89f; }
+  color: #ebbcba; }
 
 .bar .clock label {
-  color: #dcd7ba; }
+  color: #e0def4; }
 
 .bar .workspaces {
-  background: #272730;
+  background: #26233a;
   border-radius: 8px; }
   .bar .workspaces button {
     padding: 0;
-    color: #727169;
+    color: #9893a5;
     margin: 2px 0; }
+    .bar .workspaces button box {
+      transition: all 0.4s cubic-bezier(0.17, 0.67, 0.24, 1.46);
+      margin: 0.7em;
+      background: #9893a5;
+      border-radius: 1em; }
+    .bar .workspaces button.occupied box {
+      background: #e0def4; }
+    .bar .workspaces button.active box {
+      background: #f6c177;
+      min-width: 2em; }
     .bar .workspaces button:first-child {
       margin-left: 4px; }
     .bar .workspaces button:last-child {
       margin-right: 4px; }
-    .bar .workspaces button.occupied {
-      color: #dcd7ba; }
-    .bar .workspaces button.active {
-      color: #c0a36e; }
 
 .bar .tray {
   border-radius: 6px;
   min-width: 32px;
-  background: #272730; }
+  background: #26233a; }
   .bar .tray button {
     padding: 0px;
     min-width: 24px;
@@ -57,7 +65,7 @@
     .bar .tray button image {
       font-size: 10px; }
     .bar .tray button:hover {
-      color: #31313a; }
+      color: #353340; }
 
 .bar .tray-button {
   padding: 0; }
@@ -67,22 +75,17 @@
     .bar .tray-button .icon.showing {
       -gtk-icon-transform: rotate(180deg); }
 
-.bar .network .icon {
-  color: #7fb4ca; }
+.bar .control-button .icon.network {
+  color: #c4a7e7;
+  margin-top: 1px; }
 
-.bar .volume .icon {
-  color: #76946a; }
+.bar .control-button .icon.volume {
+  color: #31748f; }
 
-.bar .volume .muted {
-  color: #727169; }
-
-.bar .power-button {
-  padding: 0; }
-  .bar .power-button .icon {
-    font-size: 0.8em;
-    color: #c34043;
-    margin-left: 1px;
-    margin-bottom: 1px; }
+.bar .control-button .icon.power {
+  margin-top: 1px;
+  font-size: 0.9em;
+  color: #eb6f92; }
 
 window#cal-window {
   font-family: "Iosevka NF";
@@ -93,54 +96,56 @@ window#cal-window {
   window#cal-window .cal-box {
     box-shadow: 0 0 2px 2px #000000;
     border-radius: 12px;
-    border: 2px solid #16161d;
+    border: 2px solid #13111e;
     margin: 4;
     font-size: 0.9em;
-    background: #1f1f28; }
+    background: #191724; }
     window#cal-window .cal-box .cal {
       border-radius: 12px;
       border: none;
       margin: 4px; }
 
 calendar:selected {
-  color: #76946a;
+  color: #31748f;
   background: transparent; }
 
 calendar.header {
-  color: #7aa89f; }
+  color: #ebbcba; }
 
 window#notifications {
   all: unset;
   font-family: "Iosevka NF"; }
-  window#notifications box.notifications {
-    padding: 1em; }
+  window#notifications .notifications {
+    padding: 0.1px; }
   window#notifications .icon {
     min-width: 68px;
-    min-height: 32px;
-    margin-right: 0.8em; }
-    window#notifications .icon image {
-      font-size: 52px;
-      margin: 9px;
-      color: #dcd7ba; }
+    min-height: 68px;
+    margin-right: 1em; }
     window#notifications .icon box {
       min-width: 68px;
-      min-height: 32px; }
+      min-height: 68px;
+      border-radius: 7px; }
+    window#notifications .icon image {
+      font-size: 52px;
+      margin: 5px;
+      margin: 5px;
+      color: #e0def4; }
   window#notifications .notification {
-    min-width: 300px;
+    min-width: 330px;
     border-radius: 12px;
-    padding: 1em;
-    margin: 1em;
-    border: 2px solid #16161d;
+    padding: 0.8em;
+    margin: 0.4em;
+    border: 2px solid #13111e;
     box-shadow: 0 0 2px 2px #000000;
-    background-color: #1f1f28; }
+    background-color: #191724; }
   window#notifications .notification.critical {
-    border: 2px solid #c34043; }
+    border: 2px solid #eb6f92; }
   window#notifications .title {
-    color: #dcd7ba;
+    color: #e0def4;
     font-weight: bold;
     font-size: 1.1em; }
   window#notifications .body {
-    color: #dcd7ba;
+    color: #e0def4;
     font-size: 0.9em; }
   window#notifications .actions .action-button {
     margin: 0 0.4em;
@@ -154,7 +159,7 @@ window#image-window {
   background: transparent; }
   window#image-window .image-box {
     margin: 0.8em;
-    border: 2px solid #16161d;
+    border: 2px solid #13111e;
     border-radius: 12px;
     box-shadow: 0 0 4px 4px #000000;
     min-width: 200px;
@@ -163,45 +168,58 @@ window#image-window {
     background-repeat: no-repeat;
     background-position: center; }
 
-window#power-menu {
-  all: unset;
-  background: transparent; }
-  window#power-menu .power-outer-box {
-    padding: 0.2em;
-    background: #1f1f28;
-    margin: 0.8em;
-    border: 2px solid #16161d;
-    box-shadow: 0 0 2px 2px #000000;
-    border-radius: 12px; }
-    window#power-menu .power-outer-box label {
-      padding: 2em;
-      margin: 0.4em;
-      margin-bottom: 0;
-      border-radius: 12px;
-      font-family: "Iosevka NF";
-      font-size: 2em;
-      color: #dcd7ba;
-      text-shadow: 0px 2px 2px #16161d;
-      background-size: cover; }
-  window#power-menu .power-inner-box {
+window#control-panel {
+  all: unset; }
+  window#control-panel * {
+    font-family: "Iosevka NF"; }
+  window#control-panel .control-box {
+    background: #191724;
     margin: 0.4em;
-    background: #1f1f28; }
-    window#power-menu .power-inner-box button {
-      background: #272730;
-      font-size: 2em;
-      border-radius: 0.4em;
-      padding: 1em;
-      box-shadow: none;
-      margin: 0px 4px; }
-      window#power-menu .power-inner-box button:focus {
-        background: #31313a; }
-      window#power-menu .power-inner-box button:hover {
-        background: #31313a; }
-      window#power-menu .power-inner-box button:nth-child(1) {
-        color: #c34043; }
-      window#power-menu .power-inner-box button:nth-child(2) {
-        color: #76946a; }
-      window#power-menu .power-inner-box button:nth-child(3) {
-        color: #c0a36e; }
-      window#power-menu .power-inner-box button:nth-child(4) {
-        color: #7e9cd8; }
+    border-radius: 12px;
+    box-shadow: 0 0 2px 2px #000000;
+    border: 2px solid #13111e;
+    padding: 0.8em; }
+  window#control-panel .power-box button {
+    background: #26233a;
+    box-shadow: none;
+    min-width: 1.2em;
+    font-size: 0.9em; }
+    window#control-panel .power-box button:focus {
+      background: #353340; }
+    window#control-panel .power-box button:hover {
+      background: #353340; }
+    window#control-panel .power-box button:nth-child(1) {
+      color: #eb6f92; }
+    window#control-panel .power-box button:nth-child(2) {
+      color: #31748f; }
+    window#control-panel .power-box button:nth-child(3) {
+      color: #f6c177; }
+    window#control-panel .power-box button:nth-child(4) {
+      color: #9ccfd8; }
+  window#control-panel .uptime {
+    color: #e0def4; }
+  window#control-panel .audio-slider {
+    background: #26233a;
+    padding: 0 0.8em;
+    border-radius: 8px; }
+    window#control-panel .audio-slider scale trough {
+      min-height: 0.8em;
+      border-radius: 8px;
+      background: #9893a5; }
+      window#control-panel .audio-slider scale trough slider {
+        background: none;
+        box-shadow: none; }
+      window#control-panel .audio-slider scale trough highlight {
+        border-radius: 8px; }
+    window#control-panel .audio-slider.speaker .icon {
+      color: #31748f; }
+    window#control-panel .audio-slider.speaker scale trough highlight {
+      background: #31748f; }
+    window#control-panel .audio-slider.microphone .icon {
+      color: #9ccfd8; }
+    window#control-panel .audio-slider.microphone scale trough highlight {
+      background: #9ccfd8; }
+  window#control-panel .wifi {
+    background: #26233a; }
+    window#control-panel .wifi .icon {
+      color: #c4a7e7; }

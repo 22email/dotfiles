@@ -15,7 +15,7 @@ export const Clock = () =>
         Widget.Label({
           setup: (self) =>
             self.poll(1000, (self) =>
-              execAsync(["date", "+%H:%M:%S %b %e"]).then(
+              execAsync(["date", "+%H:%M"]).then(
                 (date) => (self.label = date),
               ),
             ),

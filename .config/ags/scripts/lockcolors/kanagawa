@@ -1,0 +1,5 @@
+#!/bin/sh
+
+init_col="0x16161d"
+inp_col="0x7aa89f"
+fail_col="0xc34043"
