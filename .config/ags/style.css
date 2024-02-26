@@ -179,6 +179,9 @@ window#control-panel {
     box-shadow: 0 0 2px 2px #000000;
     border: 2px solid #13111e;
     padding: 0.8em; }
+  window#control-panel .uptime {
+    min-width: 180px;
+    color: #e0def4; }
   window#control-panel .power-box button {
     background: #26233a;
     box-shadow: none;
@@ -196,16 +199,17 @@ window#control-panel {
       color: #f6c177; }
     window#control-panel .power-box button:nth-child(4) {
       color: #9ccfd8; }
-  window#control-panel .uptime {
-    color: #e0def4; }
   window#control-panel .audio-slider {
     background: #26233a;
     padding: 0 0.8em;
+    min-width: 180px;
     border-radius: 8px; }
+    window#control-panel .audio-slider .icon {
+      margin-right: 4px; }
     window#control-panel .audio-slider scale trough {
+      background: #9893a5;
       min-height: 0.8em;
-      border-radius: 8px;
-      background: #9893a5; }
+      border-radius: 8px; }
       window#control-panel .audio-slider scale trough slider {
         background: none;
         box-shadow: none; }

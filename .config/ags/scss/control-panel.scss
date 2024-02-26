@@ -14,8 +14,12 @@ window#control-panel {
     padding: 0.8em;
   }
 
-  .power-box {
+  .uptime {
+    min-width: 180px;
+    color: $fg;
+  }
 
+  .power-box {
     button {
       background: $bg-light;
       box-shadow: none;
@@ -48,30 +52,30 @@ window#control-panel {
     }
   }
 
-  .uptime {
-    color: $fg;
-  }
-
   .audio-slider {
     background: $bg-light;
     padding: 0 0.8em;
+    min-width: 180px;
     border-radius: 8px;
+
+    .icon {
+      margin-right: 4px;
+    }
 
     scale {
       trough {
+        background: $color8;
+        min-height: 0.8em;
+        border-radius: 8px;
+
         slider {
           background: none;
           box-shadow: none;
         }
 
-        min-height: 0.8em;
-        border-radius: 8px;
-
         highlight {
           border-radius: 8px;
         }
-
-        background: $color8;
       }
     }
 

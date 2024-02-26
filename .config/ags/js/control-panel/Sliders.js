@@ -10,7 +10,6 @@ import { speakerIcon, microphoneIcon } from "../Variables.js";
 const AudioSlider = (type = "speaker") =>
   Widget.Box({
     spacing: 8, 
-    css: "min-width: 180px",
     class_name: `audio-slider ${type}`,
     children: [
       Widget.Icon({ class_name: "icon" }).hook(
@@ -21,7 +20,9 @@ const AudioSlider = (type = "speaker") =>
         },
         `${type}-changed`,
       ),
-      Widget.Label().hook(
+      Widget.Label({
+        css: "min-width: 35px"
+      }).hook(
         Audio,
         (self) => {
           let muted = Audio[type].stream?.is_muted;
