@@ -9,7 +9,6 @@ import { speakerIcon, microphoneIcon } from "../Variables.js";
 /** @param {'speaker' | 'microphone'} type */
 const AudioSlider = (type = "speaker") =>
   Widget.Box({
-    spacing: 8, 
     class_name: `audio-slider ${type}`,
     children: [
       Widget.Icon({ class_name: "icon" }).hook(
@@ -21,14 +20,14 @@ const AudioSlider = (type = "speaker") =>
         `${type}-changed`,
       ),
       Widget.Label({
-        css: "min-width: 35px"
+        css: "min-width: 35px",
       }).hook(
         Audio,
         (self) => {
           let muted = Audio[type].stream?.is_muted;
           self.toggleClassName("muted", muted);
           self.label = muted
-            ? "Muted"
+            ? "mut"
             : `${Math.round(Audio[type].volume * 100)}%`;
         },
         `${type}-changed`,

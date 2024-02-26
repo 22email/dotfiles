@@ -205,7 +205,7 @@ window#control-panel {
     min-width: 180px;
     border-radius: 8px; }
     window#control-panel .audio-slider .icon {
-      margin-right: 4px; }
+      margin-right: 0.4em; }
     window#control-panel .audio-slider scale trough {
       background: #9893a5;
       min-height: 0.8em;
