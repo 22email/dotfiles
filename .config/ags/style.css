@@ -1,9 +1,9 @@
+* {
+  all: unset; }
+
 .bar * {
   font-family: "Iosevka NF";
-  font-size: 0.98em;
-  box-shadow: none;
-  border: none;
-  text-shadow: none; }
+  font-size: 0.98em; }
 
 .bar .cbox {
   border-radius: 12px;
@@ -17,7 +17,8 @@
   padding: 0.8em 0;
   background: #26233a;
   border-radius: 6px;
-  min-width: 2em; }
+  min-width: 2em;
+  min-height: 2em; }
   .bar button:hover {
     background: #353340; }
 
@@ -99,22 +100,26 @@ window#cal-window {
     border-radius: 12px;
     border: 2px solid #13111e;
     margin: 4;
+    background: #191724;
+    color: #e0def4;
     font-size: 0.9em;
-    background: #191724; }
+    padding: 1rem 1rem 0.2rem; }
     window#cal-window .cal-box .cal {
       border-radius: 12px;
       border: none;
-      margin: 4px; }
-
-calendar:selected {
-  color: #31748f;
-  background: transparent; }
-
-calendar.header {
-  color: #ebbcba; }
-
-calendar {
-  background: #191724; }
+      padding: 0.2rem 0.25rem 0rem;
+      margin-left: 10px; }
+      window#cal-window .cal-box .cal.highlight {
+        padding: 10rem; }
+  window#cal-window calendar:selected {
+    color: #31748f;
+    background: transparent; }
+  window#cal-window calendar.header {
+    color: #ebbcba; }
+  window#cal-window calendar {
+    background: #191724; }
+  window#cal-window calendar:indeterminate {
+    color: #26233a; }
 
 window#notifications {
   all: unset;
@@ -175,7 +180,8 @@ window#image-window {
 window#control-panel {
   all: unset; }
   window#control-panel * {
-    font-family: "Iosevka NF"; }
+    font-family: "Iosevka NF";
+    border: none; }
   window#control-panel .control-box {
     background: #191724;
     margin: 0.4em;
@@ -190,9 +196,9 @@ window#control-panel {
     color: #e0def4; }
   window#control-panel .power-box button {
     background: #26233a;
-    box-shadow: none;
     border-radius: 8px;
-    min-width: 1.2em;
+    min-width: 2.4em;
+    min-height: 2.4em;
     font-size: 0.9em; }
     window#control-panel .power-box button:focus {
       background: #353340; }
@@ -207,10 +213,11 @@ window#control-panel {
     window#control-panel .power-box button:nth-child(4) {
       color: #9ccfd8; }
   window#control-panel .audio-slider {
+    all: unset;
     background: #26233a;
     padding: 0 0.8em;
     min-width: 25em;
-    min-height: 2em;
+    min-height: 3em;
     border-radius: 8px; }
     window#control-panel .audio-slider .icon {
       margin-right: 0.4em; }
@@ -219,11 +226,13 @@ window#control-panel {
       min-height: 0.8em;
       border-radius: 8px; }
       window#control-panel .audio-slider scale trough slider {
+        all: unset;
         background: none;
         box-shadow: none;
         border: none; }
       window#control-panel .audio-slider scale trough highlight {
-        border-radius: 8px;
+        all: unset;
+        border-radius: 16px;
         border: none; }
     window#control-panel .audio-slider.speaker .icon {
       color: #31748f; }
@@ -234,10 +243,12 @@ window#control-panel {
     window#control-panel .audio-slider.microphone scale trough highlight {
       background: #9ccfd8; }
   window#control-panel .wifi {
+    all: unset;
+    padding: 0 0.8em;
     background: #26233a;
     border-radius: 8px;
-    min-height: 2em; }
+    min-height: 3em; }
     window#control-panel .wifi .icon {
       color: #c4a7e7; }
-    window#control-panel .wifi button:hover {
+    window#control-panel .wifi:hover {
       background: #353340; }

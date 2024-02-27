@@ -14,26 +14,37 @@ window#cal-window {
     border-radius: 12px;
     border: 2px solid $color0;
     margin: 4;
-    font-size: 0.9em;
     background: $bg-dark;
+    color: $fg;
+    font-size: 0.9em;
+    padding: 1rem 1rem 0.2rem;
 
     .cal {
+      &.highlight {
+        padding: 10rem;
+      }
+
       border-radius: 12px;
       border: none;
-      margin: 4px;
+      padding: 0.2rem 0.25rem 0rem;
+      margin-left: 10px;
     }
   }
-}
 
-calendar:selected {
-  color: $color2;
-  background: transparent;
-}
+  calendar:selected {
+    color: $color2;
+    background: transparent;
+  }
 
-calendar.header {
-  color: $color14;
-}
+  calendar.header {
+    color: $color14;
+  }
 
-calendar {
-  background: $bg-dark;
+  calendar {
+    background: $bg-dark;
+  }
+
+  calendar:indeterminate {
+    color: $bg-light;
+  }
 }

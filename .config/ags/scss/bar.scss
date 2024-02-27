@@ -2,9 +2,6 @@
   * {
     font-family: "Iosevka NF";
     font-size: 0.98em;
-    box-shadow: none;
-    border: none;
-    text-shadow: none;
   }
 
   .cbox {
@@ -21,6 +18,7 @@
     background: $bg-light;
     border-radius: 6px;
     min-width: 2em;
+    min-height: 2em;
 
     &:hover {
       background: $hover;

@@ -3,6 +3,7 @@ window#control-panel {
 
   * {
     font-family: "Iosevka NF";
+    border: none;
   }
 
   .control-box {
@@ -24,9 +25,9 @@ window#control-panel {
   .power-box {
     button {
       background: $bg-light;
-      box-shadow: none;
       border-radius: 8px;
-      min-width: 1.2em;
+      min-width: 2.4em;
+      min-height: 2.4em;
       font-size: 0.9em;
 
       &:focus {
@@ -56,10 +57,11 @@ window#control-panel {
   }
 
   .audio-slider {
+    all: unset;
     background: $bg-light;
     padding: 0 0.8em;
     min-width: 25em;
-    min-height: 2em;
+    min-height: 3em;
     border-radius: 8px;
 
     .icon {
@@ -73,13 +75,15 @@ window#control-panel {
         border-radius: 8px;
 
         slider {
+          all: unset;
           background: none;
           box-shadow: none;
           border: none;
         }
 
         highlight {
-          border-radius: 8px;
+          all: unset;
+          border-radius: 16px;
           border: none;
         }
       }
@@ -115,18 +119,18 @@ window#control-panel {
   }
 
   .wifi {
+    all: unset;
+    padding: 0 0.8em;
     background: $bg-light;
     border-radius: 8px;
-    min-height: 2em;
+    min-height: 3em;
 
     .icon {
       color: $color5;
     }
 
-    button {
-      &:hover {
-        background: $hover;
-      }
+    &:hover {
+      background: $hover;
     }
   }
 }
