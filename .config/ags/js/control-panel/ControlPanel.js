@@ -10,6 +10,7 @@ const TopBox = () =>
     children: [
       PowerBox(),
       Widget.Label({
+        hexpand: true,
         className: "uptime",
         label: uptime.bind().as((value) => value.toString()),
       }),
@@ -33,7 +34,7 @@ const BottomBox = () =>
 export const ControlPanel = () =>
   Widget.Window({
     name: "control-panel",
-    anchor: ["top", "right"],
+    anchor: ["bottom", "left"],
     visible: false,
     popup: true,
     margins: [0, 4, 4],

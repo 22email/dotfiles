@@ -6,21 +6,24 @@ import { ControlButton } from "./ControlButton.js";
 
 const Left = () =>
   Widget.Box({
-    hpack: "start",
-    css: "margin: 0.2em 0.7em",
+    vertical: true,
+    vpack: "start",
+    css: "margin: 0.7em 0.2em",
     spacing: 8,
     children: [Workspaces()],
   });
 const Center = () =>
   Widget.Box({
-    css: "margin: 0.2em 0.7em",
+    vertical: true,
+    css: "margin: 0.7em 0.2em",
     spacing: 8,
     children: [Clock()],
   });
 const Right = () =>
   Widget.Box({
-    css: "margin: 0.2em 0.7em",
-    hpack: "end",
+    css: "margin: 0.7em 0.2em",
+    vertical: true,
+    vpack: "end",
     spacing: 8,
     children: [
       SysTray(),
@@ -32,11 +35,12 @@ export const Bar = (monitor = 0) =>
     name: `bar-${monitor}`, // name has to be unique
     class_name: "bar",
     monitor,
-    anchor: ["top", "left", "right"],
+    anchor: ["top", "bottom", "left"],
     exclusivity: "exclusive",
-    margins: [4, 4, 0],
+    margins: [4, 0, 4, 4],
     child: Widget.CenterBox({
       class_name: "cbox",
+      vertical: true,
       start_widget: Left(),
       center_widget: Center(),
       end_widget: Right(),

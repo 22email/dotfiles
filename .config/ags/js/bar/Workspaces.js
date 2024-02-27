@@ -7,11 +7,14 @@ export const Workspaces = () =>
   Widget.EventBox({
     class_name: "workspaces",
     child: Widget.Box({
+      vertical: true,
       spacing: 4,
       children: Array.from({ length: 10 }, (_, i) => i + 1).map((i) =>
         Widget.Button({
           attribute: i,
-          child: Widget.Box({}),
+          child: Widget.Box({
+            vpack: "fill"
+          }),
           setup: (self) =>
             self.hook(Hyprland, () => {
               self.toggleClassName(

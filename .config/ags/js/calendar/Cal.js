@@ -15,6 +15,6 @@ export const Cal = (monitor = 0) =>
     popup: true,
     visible: false,
     margins: [4, 4],
-    anchor: ["top"],
+    anchor: ["left"],
     child: CalBox(),
   });

@@ -14,7 +14,7 @@
   padding: 0.2em; }
 
 .bar button {
-  padding: 0 0.8em;
+  padding: 0.8em 0;
   background: #26233a;
   border-radius: 6px;
   min-width: 2em; }
@@ -25,7 +25,8 @@
   color: #ebbcba; }
 
 .bar .clock label {
-  color: #e0def4; }
+  color: #e0def4;
+  font-weight: bold; }
 
 .bar .workspaces {
   background: #26233a;
@@ -33,7 +34,7 @@
   .bar .workspaces button {
     padding: 0;
     color: #9893a5;
-    margin: 2px 0; }
+    margin: 0px 2px; }
     .bar .workspaces button box {
       transition: all 0.4s cubic-bezier(0.17, 0.67, 0.24, 1.46);
       margin: 0.7em;
@@ -43,47 +44,47 @@
       background: #e0def4; }
     .bar .workspaces button.active box {
       background: #f6c177;
-      min-width: 2em; }
+      min-height: 3em; }
     .bar .workspaces button:first-child {
-      margin-left: 4px; }
+      margin-top: 4px; }
     .bar .workspaces button:last-child {
-      margin-right: 4px; }
+      margin-bottom: 4px; }
 
 .bar .tray {
   border-radius: 6px;
-  min-width: 32px;
+  min-height: 32px;
   background: #26233a; }
   .bar .tray button {
     padding: 0px;
-    min-width: 24px;
-    min-height: 8px;
-    margin: 2px 0px; }
+    min-height: 24px;
+    min-width: 8px;
+    margin: 0px 2px; }
     .bar .tray button:first-child {
-      margin-left: 4px; }
+      margin-top: 4px; }
     .bar .tray button:last-child {
-      margin-right: 4px; }
+      margin-bottom: 4px; }
     .bar .tray button image {
       font-size: 10px; }
     .bar .tray button:hover {
       color: #353340; }
 
 .bar .tray-button {
-  padding: 0; }
+  padding: 2px 0; }
   .bar .tray-button .icon {
     font-size: 1.2em;
-    transition: all 0.2s cubic-bezier(1, 1, 1, 1); }
+    color: #e0def4;
+    transition: all 0.2s cubic-bezier(1, 1, 1, 1);
+    -gtk-icon-transform: rotate(90deg); }
     .bar .tray-button .icon.showing {
-      -gtk-icon-transform: rotate(180deg); }
+      -gtk-icon-transform: rotate(270deg); }
 
 .bar .control-button .icon.network {
-  color: #c4a7e7;
-  margin-top: 1px; }
+  color: #c4a7e7; }
 
 .bar .control-button .icon.volume {
   color: #31748f; }
 
 .bar .control-button .icon.power {
-  margin-top: 1px;
   font-size: 0.9em;
   color: #eb6f92; }
 
@@ -111,6 +112,9 @@ calendar:selected {
 
 calendar.header {
   color: #ebbcba; }
+
+calendar {
+  background: #191724; }
 
 window#notifications {
   all: unset;
@@ -180,11 +184,14 @@ window#control-panel {
     border: 2px solid #13111e;
     padding: 0.8em; }
   window#control-panel .uptime {
-    min-width: 180px;
+    border-radius: 8px;
+    background: #26233a;
+    font-size: 0.9em;
     color: #e0def4; }
   window#control-panel .power-box button {
     background: #26233a;
     box-shadow: none;
+    border-radius: 8px;
     min-width: 1.2em;
     font-size: 0.9em; }
     window#control-panel .power-box button:focus {
@@ -202,7 +209,8 @@ window#control-panel {
   window#control-panel .audio-slider {
     background: #26233a;
     padding: 0 0.8em;
-    min-width: 180px;
+    min-width: 25em;
+    min-height: 2em;
     border-radius: 8px; }
     window#control-panel .audio-slider .icon {
       margin-right: 0.4em; }
@@ -212,9 +220,11 @@ window#control-panel {
       border-radius: 8px; }
       window#control-panel .audio-slider scale trough slider {
         background: none;
-        box-shadow: none; }
+        box-shadow: none;
+        border: none; }
       window#control-panel .audio-slider scale trough highlight {
-        border-radius: 8px; }
+        border-radius: 8px;
+        border: none; }
     window#control-panel .audio-slider.speaker .icon {
       color: #31748f; }
     window#control-panel .audio-slider.speaker scale trough highlight {
@@ -224,6 +234,10 @@ window#control-panel {
     window#control-panel .audio-slider.microphone scale trough highlight {
       background: #9ccfd8; }
   window#control-panel .wifi {
-    background: #26233a; }
+    background: #26233a;
+    border-radius: 8px;
+    min-height: 2em; }
     window#control-panel .wifi .icon {
       color: #c4a7e7; }
+    window#control-panel .wifi button:hover {
+      background: #353340; }

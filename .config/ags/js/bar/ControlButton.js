@@ -28,7 +28,7 @@ const NetworkIndicator = () =>
       wifi: NetworkIcon("wifi"),
       wired: NetworkIcon("wired"),
     },
-    shown: Network.bind("primary").transform((p) => p || "wifi"),
+    shown: Network.bind("primary").as((p) => p || "wifi"),
   });
 
 const PowerIcon = () =>
@@ -44,6 +44,7 @@ export const ControlButton = () =>
       App.toggleWindow("control-panel");
     },
     child: Widget.Box({
+      vertical: true,
       spacing: 12,
       children: [NetworkIndicator(), VolumeIndicator(), PowerIcon()],
     }),

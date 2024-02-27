@@ -17,7 +17,7 @@
   }
 
   button {
-    padding: 0 0.8em;
+    padding: 0.8em 0;
     background: $bg-light;
     border-radius: 6px;
     min-width: 2em;
@@ -34,6 +34,7 @@
 
     label {
       color: $fg;
+      font-weight: bold;
     }
   }
 
@@ -44,7 +45,7 @@
     button {
       padding: 0;
       color: $color8;
-      margin: 2px 0;
+      margin: 0px 2px;
 
       box {
         transition: all 0.4s cubic-bezier(0.17, 0.67, 0.24, 1.46);
@@ -62,16 +63,16 @@
       &.active {
         box {
           background: $color3;
-          min-width: 2em;
+          min-height: 3em;
         }
       }
 
       &:first-child {
-        margin-left: 4px;
+        margin-top: 4px;
       }
 
       &:last-child {
-        margin-right: 4px;
+        margin-bottom: 4px;
       }
     }
   }
@@ -79,18 +80,18 @@
   .tray {
     button {
       &:first-child {
-        margin-left: 4px;
+        margin-top: 4px;
       }
 
       &:last-child {
-        margin-right: 4px;
+        margin-bottom: 4px;
       }
 
       padding: 0px;
-      min-width: 24px;
-      min-height: 8px;
+      min-height: 24px;
+      min-width: 8px;
 
-      margin: 2px 0px;
+      margin: 0px 2px;
 
       image {
         font-size: 10px;
@@ -102,19 +103,22 @@
     }
 
     border-radius: 6px;
-    min-width: 32px;
+    min-height: 32px;
     background: $bg-light;
   }
 
   .tray-button {
-    padding: 0;
+    padding: 2px 0;
 
     .icon {
       font-size: 1.2em;
+      color: $fg;
       transition: all 0.2s cubic-bezier(1, 1, 1, 1);
 
+      -gtk-icon-transform: rotate(90deg);
+
       &.showing {
-        -gtk-icon-transform: rotate(180deg);
+        -gtk-icon-transform: rotate(270deg);
       }
     }
   }
@@ -123,7 +127,7 @@
     .icon {
       &.network {
         color: $color5;
-        margin-top: 1px;
+        // margin-top: 1px;
       }
 
       &.volume {
@@ -131,7 +135,7 @@
       }
 
       &.power {
-        margin-top: 1px;
+        // margin-top: 1px;
         font-size: 0.9em;
         color: $color1;
       }

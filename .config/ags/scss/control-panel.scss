@@ -15,7 +15,9 @@ window#control-panel {
   }
 
   .uptime {
-    min-width: 180px;
+    border-radius: 8px;
+    background: $bg-light;
+    font-size: 0.9em;
     color: $fg;
   }
 
@@ -23,6 +25,7 @@ window#control-panel {
     button {
       background: $bg-light;
       box-shadow: none;
+      border-radius: 8px;
       min-width: 1.2em;
       font-size: 0.9em;
 
@@ -55,7 +58,8 @@ window#control-panel {
   .audio-slider {
     background: $bg-light;
     padding: 0 0.8em;
-    min-width: 180px;
+    min-width: 25em;
+    min-height: 2em;
     border-radius: 8px;
 
     .icon {
@@ -71,10 +75,12 @@ window#control-panel {
         slider {
           background: none;
           box-shadow: none;
+          border: none;
         }
 
         highlight {
           border-radius: 8px;
+          border: none;
         }
       }
     }
@@ -110,9 +116,17 @@ window#control-panel {
 
   .wifi {
     background: $bg-light;
+    border-radius: 8px;
+    min-height: 2em;
 
     .icon {
       color: $color5;
+    }
+
+    button {
+      &:hover {
+        background: $hover;
+      }
     }
   }
 }

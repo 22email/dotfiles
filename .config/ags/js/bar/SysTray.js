@@ -5,8 +5,9 @@ import Variable from "resource:///com/github/Aylur/ags/variable.js";
 const tray = () =>
   Widget.Box({
     className: "tray",
+    vertical: true,
     spacing: 4,
-    children: SystemTray.bind("items").transform((items) => {
+    children: SystemTray.bind("items").as((items) => {
       return items.map((item) =>
         Widget.Button({
           child: Widget.Icon({ binds: [["icon", item, "icon"]] }),
@@ -24,7 +25,7 @@ export const SysTray = () => {
   const trayRevealer = Widget.Revealer({
     revealChild: false,
     transition_duration: 100,
-    transition: "slide_right",
+    transition: "slide_up",
     child: tray(),
     setup: (self) =>
       self.hook(showSysTray, () => {
@@ -49,6 +50,7 @@ export const SysTray = () => {
 
   return Widget.Box({
     spacing: 8,
+    vertical: true,
     children: [trayRevealer, button],
   });
 };

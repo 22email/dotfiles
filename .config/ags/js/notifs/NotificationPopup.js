@@ -93,12 +93,12 @@ const Notification = (n) => {
 export const NotificationPopup = Widget.Window({
   name: "notifications",
   class_name: "notif-window",
-  anchor: ["bottom", "right"],
+  anchor: ["top", "right"],
   margins: [4, 4, 0],
   child: Widget.Box({
     class_name: "notifications",
     vertical: true,
-    children: Notifications.bind("popups").transform((popups) => {
+    children: Notifications.bind("popups").as((popups) => {
       return popups.map(Notification);
     }),
   }),

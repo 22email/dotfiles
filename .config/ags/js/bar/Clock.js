@@ -7,6 +7,7 @@ export const Clock = () =>
     child: Widget.Box({
       class_name: "clock",
       spacing: 8,
+      vertical: true,
       children: [
         Widget.Icon({
           class_name: "icon",
@@ -15,7 +16,7 @@ export const Clock = () =>
         Widget.Label({
           setup: (self) =>
             self.poll(1000, (self) =>
-              execAsync(["date", "+%H:%M"]).then(
+              execAsync(["date", "+%H%n%M"]).then(
                 (date) => (self.label = date),
               ),
             ),
