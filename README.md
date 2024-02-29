@@ -3,3 +3,4 @@
 ## TODO
 
 - [ ] Theme switcher 
+- [ ] Fix Kvantum 

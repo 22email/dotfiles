@@ -26,8 +26,8 @@ window#control-panel {
     button {
       background: $bg-light;
       border-radius: 8px;
-      min-width: 2.4em;
-      min-height: 2.4em;
+      min-width: 2.2em;
+      min-height: 2.2em;
       font-size: 0.9em;
 
       &:focus {
@@ -75,14 +75,12 @@ window#control-panel {
         border-radius: 8px;
 
         slider {
-          all: unset;
           background: none;
           box-shadow: none;
           border: none;
         }
 
         highlight {
-          all: unset;
           border-radius: 16px;
           border: none;
         }

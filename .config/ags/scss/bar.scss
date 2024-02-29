@@ -31,8 +31,9 @@
     }
 
     label {
-      color: $fg;
       font-weight: bold;
+      font-size: 1.1em;
+      color: $fg;
     }
   }
 
@@ -45,9 +46,10 @@
       color: $color8;
       margin: 0px 2px;
 
+
       box {
-        transition: all 0.4s cubic-bezier(0.17, 0.67, 0.24, 1.46);
         margin: 0.7em;
+        transition: all 0.4s cubic-bezier(0.17, 0.67, 0.24, 1.46);
         background: $color8;
         border-radius: 1em;
       }

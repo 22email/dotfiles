@@ -1,4 +1,4 @@
 #!/bin/sh
 
-source $HOME/.config/ags/scripts/lockcolors/kanagawa
+source $HOME/.config/ags/scripts/lockcolors/meut
 waylock -init-color "$init_col" -input-color "$inp_col" -fail-color "$fail_col"

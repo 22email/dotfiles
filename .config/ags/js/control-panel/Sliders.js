@@ -2,10 +2,6 @@ import Audio from "resource:///com/github/Aylur/ags/service/audio.js";
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { speakerIcon, microphoneIcon } from "../Variables.js";
 
-
-// TODO: brightness? (prolly not)
-
-
 /** @param {'speaker' | 'microphone'} type */
 const AudioSlider = (type = "speaker") =>
   Widget.Box({

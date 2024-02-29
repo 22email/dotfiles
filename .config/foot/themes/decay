@@ -1,0 +1,39 @@
+[colors]
+foreground = b6beca
+background = 171a1f
+
+selection-foreground = a9b1d6
+selection-background = 22262e
+
+# Black
+regular0 = 1c252c
+bright0  = 384148
+
+# Red
+regular1 = e05f65
+bright1  = fc7b81
+
+# Green
+regular2 = 78dba9
+bright2  = 94f7c5
+
+# Yellow
+regular3 = f1cf8a
+bright3  = ffeba6
+
+# Blue
+regular4 = 70a5eb
+bright4  = 8cc1ff
+
+# Magenta
+regular5 = c68aee
+bright5  = e2a6ff
+
+# Cyan
+regular6 = 74bee9
+bright6  = 90daff
+
+# White
+regular7 = ee1e6
+bright7  = fafdff
+
