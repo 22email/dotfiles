@@ -158,12 +158,18 @@ window#notifications {
     color: #c2c4c2;
     font-size: 0.9em; }
   window#notifications .actions .action-button {
+    color: #c2c4c2;
+    background: #161b1d;
+    border-radius: 12px;
+    padding: 0.8em;
     margin: 0 0.4em;
     margin-top: 0.8em; }
     window#notifications .actions .action-button:first-child {
       margin-left: 0; }
     window#notifications .actions .action-button:last-child {
       margin-right: 0; }
+    window#notifications .actions .action-button:hover {
+      background: #21282c; }
 
 window#image-window {
   background: transparent; }

@@ -52,6 +52,10 @@ window#notifications {
 
   .actions {
     .action-button {
+      color: $fg;
+      background: $bg-light;
+      border-radius: 12px;
+      padding: 0.8em;
       margin: 0 0.4em;
       margin-top: 0.8em;
 
@@ -61,6 +65,10 @@ window#notifications {
 
       &:last-child {
         margin-right: 0;
+      }
+
+      &:hover {
+        background: $hover;
       }
     }
   }
