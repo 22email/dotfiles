@@ -2,8 +2,10 @@
 
 `sucks slightly less`
 
-## Screenshots
+## Screenshot
 
+![screenshot](screenshots/sc.png)
+    
 ## Info
 
 - os: Artix Linux
@@ -20,13 +22,9 @@
 ## Credit
 
 - statusbar scripts are modified from [Utkarsh Varma's scripts](https://github.com/UtkarshVerma/dotfiles/tree/main/.local/bin/statusbar)
-- Wallpapers from dkeg (this guy is so awesome)
+- Wallpapers from [dkeg](https://github.com/dkeg/crayolo)
 
 ## Other
 
 - My suckless repo: https://github.com/22email/suckless
 - My NvChad config: https://github.com/22email/nvchad-config
-
-## TODO
-
-- [ ] Use and make scripts for scrot instead of flameshot
