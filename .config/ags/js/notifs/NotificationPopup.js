@@ -93,8 +93,8 @@ const Notification = (n) => {
 export const NotificationPopup = Widget.Window({
   name: "notifications",
   class_name: "notif-window",
-  anchor: ["top", "right"],
-  margins: [4, 4, 0],
+  anchor: ["top"],
+  // margins: [4, 4, 0],
   child: Widget.Box({
     class_name: "notifications",
     vertical: true,

@@ -126,7 +126,7 @@ window#notifications {
   all: unset;
   font-family: "Iosevka NF"; }
   window#notifications .notifications {
-    padding: 0.1px; }
+    padding: 0.5em; }
   window#notifications .icon {
     min-width: 68px;
     min-height: 68px;
@@ -148,12 +148,12 @@ window#notifications {
     border: 2px solid #111115;
     box-shadow: 0 0 2px 2px #000000;
     background-color: #111517; }
-  window#notifications .notification.critical {
-    border: 2px solid #a54242; }
+    window#notifications .notification .critical {
+      border: 2px solid #a54242; }
   window#notifications .title {
     color: #c2c4c2;
     font-weight: bold;
-    font-size: 1.1em; }
+    font-size: 1.2em; }
   window#notifications .body {
     color: #c2c4c2;
     font-size: 0.9em; }

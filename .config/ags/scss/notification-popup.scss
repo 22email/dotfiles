@@ -3,7 +3,7 @@ window#notifications {
   font-family: "Iosevka NF";
 
   .notifications {
-    padding: 0.1px;
+    padding: 0.5em;
   }
 
   .icon {
@@ -33,16 +33,16 @@ window#notifications {
     border: 2px solid $color0;
     box-shadow: 0 0 2px 2px #000000;
     background-color: $bg-dark;
-  }
 
-  .notification.critical {
-    border: 2px solid $color1;
+    .critical {
+      border: 2px solid $color1;
+    }
   }
 
   .title {
     color: $fg;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 
   .body {
