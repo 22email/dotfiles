@@ -1,4 +1,3 @@
-import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { PowerBox } from "./PowerBox.js";
 import { Speaker, Microphone } from "./Sliders.js";
 import { Wifi } from "./WifiWidget.js";

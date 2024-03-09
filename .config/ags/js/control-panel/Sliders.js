@@ -1,5 +1,5 @@
-import Audio from "resource:///com/github/Aylur/ags/service/audio.js";
-import Widget from "resource:///com/github/Aylur/ags/widget.js";
+const audio = await Service.import("audio")
+
 import { speakerIcon, microphoneIcon } from "../Variables.js";
 
 /** @param {'speaker' | 'microphone'} type */
@@ -8,9 +8,9 @@ const AudioSlider = (type = "speaker") =>
     class_name: `audio-slider ${type}`,
     children: [
       Widget.Icon({ class_name: "icon" }).hook(
-        Audio,
+        audio,
         (self) => {
-          if (!Audio[type]) return;
+          if (!audio[type]) return;
           self.icon = type === "speaker" ? speakerIcon() : microphoneIcon();
         },
         `${type}-changed`,
@@ -18,23 +18,23 @@ const AudioSlider = (type = "speaker") =>
       Widget.Label({
         css: "min-width: 35px",
       }).hook(
-        Audio,
+        audio,
         (self) => {
-          let muted = Audio[type].stream?.is_muted;
+          let muted = audio[type].stream?.is_muted;
           self.toggleClassName("muted", muted);
           self.label = muted
             ? "mut"
-            : `${Math.round(Audio[type].volume * 100)}%`;
+            : `${Math.round(audio[type].volume * 100)}%`;
         },
         `${type}-changed`,
       ),
       Widget.Slider({
         hexpand: true,
         draw_value: false,
-        on_change: ({ value }) => (Audio[type].volume = value),
+        on_change: ({ value }) => (audio[type].volume = value),
         setup: (self) =>
-          self.hook(Audio[type], () => {
-            self.value = Audio[type].volume || 0;
+          self.hook(audio[type], () => {
+            self.value = audio[type].volume || 0;
           }),
       }),
     ],

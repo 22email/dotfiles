@@ -1,5 +1,5 @@
-import Widget from "resource:///com/github/Aylur/ags/widget.js";
-import Network from "resource:///com/github/Aylur/ags/service/network.js";
+const network = await Service.import("network")
+
 import { execAsync } from "resource:///com/github/Aylur/ags/utils.js";
 
 const WifiIndicator = () =>
@@ -8,10 +8,10 @@ const WifiIndicator = () =>
     spacing: 8,
     children: [
       Widget.Icon({
-        icon: Network.wifi.bind("icon_name"),
+        icon: network.wifi.bind("icon_name"),
       }),
       Widget.Label({
-        label: Network.wifi.bind("ssid").transform((ssid) => ssid || "Unknown"),
+        label: network.wifi.bind("ssid").as((ssid) => ssid || "Unknown"),
       }),
     ],
   });
@@ -22,7 +22,7 @@ const WiredIndicator = () =>
     children: [
       Widget.Icon({
         class_name: "icon",
-        icon: Network.wired.bind("icon_name"),
+        icon: network.wired.bind("icon_name"),
       }),
       Widget.Label("Wired"),
     ],
@@ -38,6 +38,6 @@ export const Wifi = () =>
         wifi: WifiIndicator(),
         wired: WiredIndicator(),
       },
-      shown: Network.bind("primary").transform((p) => p || "wifi"),
+      shown: network.bind("primary").as((p) => p || "wifi"),
     }),
   });

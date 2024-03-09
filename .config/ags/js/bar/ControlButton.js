@@ -1,13 +1,13 @@
-import Widget from "resource:///com/github/Aylur/ags/widget.js";
-import Audio from "resource:///com/github/Aylur/ags/service/audio.js";
-import Network from "resource:///com/github/Aylur/ags/service/network.js";
+const audio = await Service.import("audio")
+const network = await Service.import("network")
+
 import { speakerIcon } from "../Variables.js";
 
 const VolumeIndicator = () =>
   Widget.Icon({
     className: "icon volume",
   }).hook(
-    Audio,
+    audio,
     (self) => {
       self.icon = speakerIcon();
     },
@@ -18,7 +18,7 @@ const VolumeIndicator = () =>
 const NetworkIcon = (type) =>
   Widget.Icon({
     className: "icon network",
-    icon: Network[type].bind("icon_name"),
+    icon: network[type].bind("icon_name"),
   });
 
 const NetworkIndicator = () =>
@@ -28,7 +28,7 @@ const NetworkIndicator = () =>
       wifi: NetworkIcon("wifi"),
       wired: NetworkIcon("wired"),
     },
-    shown: Network.bind("primary").as((p) => p || "wifi"),
+    shown: network.bind("primary").as((p) => p || "wifi"),
   });
 
 const PowerIcon = () =>

@@ -1,4 +1,3 @@
-import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { Workspaces } from "./Workspaces.js";
 import { Clock } from "./Clock.js";
 import { SysTray } from "./SysTray.js";

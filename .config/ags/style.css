@@ -45,7 +45,7 @@
     .bar .workspaces button.occupied box {
       background: #c2c4c2; }
     .bar .workspaces button.active box {
-      background: #d08666;
+      background: #6a9440;
       min-height: 3em; }
     .bar .workspaces button:first-child {
       margin-top: 4px; }
@@ -126,7 +126,7 @@ window#notifications {
   all: unset;
   font-family: "Iosevka NF"; }
   window#notifications .notifications {
-    padding: 0.5em; }
+    padding: 0.5em 1px 0.5em 1px; }
   window#notifications .icon {
     min-width: 68px;
     min-height: 68px;
@@ -136,12 +136,10 @@ window#notifications {
       min-height: 68px;
       border-radius: 7px; }
     window#notifications .icon image {
-      font-size: 52px;
-      margin: 5px;
-      margin: 5px;
+      font-size: 68px;
       color: #c2c4c2; }
   window#notifications .notification {
-    min-width: 330px;
+    min-width: 32em;
     border-radius: 12px;
     padding: 0.8em;
     margin: 0.4em;
@@ -160,10 +158,9 @@ window#notifications {
   window#notifications .actions .action-button {
     color: #c2c4c2;
     background: #161b1d;
-    border-radius: 12px;
-    padding: 0.8em;
-    margin: 0 0.4em;
-    margin-top: 0.8em; }
+    border-radius: 0.8em;
+    margin-top: 0.8em;
+    padding: 0.8em; }
     window#notifications .actions .action-button:first-child {
       margin-left: 0; }
     window#notifications .actions .action-button:last-child {

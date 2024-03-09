@@ -1,12 +1,8 @@
-// This is taken from the examples
-import Notifications from "resource:///com/github/Aylur/ags/service/notifications.js";
-import Widget from "resource:///com/github/Aylur/ags/widget.js";
-import { lookUpIcon } from "resource:///com/github/Aylur/ags/utils.js";
+const notifications = await Service.import("notifications");
+const popups = notifications.bind("popups");
 
 /** @param {import('resource:///com/github/Aylur/ags/service/notifications.js').Notification} n */
 const NotificationIcon = ({ app_entry, app_icon, image }) => {
-  print(image);
-
   if (image) {
     return Widget.Box({
       css: `
@@ -19,19 +15,19 @@ const NotificationIcon = ({ app_entry, app_icon, image }) => {
   }
 
   let icon = "dialog-information-symbolic";
-  if (lookUpIcon(app_icon)) icon = app_icon;
+  if (Utils.lookUpIcon(app_icon)) icon = app_icon;
 
-  if (app_entry && lookUpIcon(app_entry)) icon = app_entry;
+  if (app_entry && Utils.lookUpIcon(app_entry)) icon = app_entry;
 
   return Widget.Icon(icon);
 };
 
 /** @param {import('resource:///com/github/Aylur/ags/service/notifications.js').Notification} n */
-const Notification = (n) => {
+export const Notification = (n) => {
   const icon = Widget.Box({
-    vpack: "center",
+    vpack: "start",
     class_name: "icon",
-    children: [NotificationIcon(n)],
+    child: NotificationIcon(n),
   });
 
   const title = Widget.Label({
@@ -79,7 +75,6 @@ const Notification = (n) => {
             icon,
             Widget.Box({
               vertical: true,
-              spacing: 2,
               children: [title, body],
             }),
           ],
@@ -92,14 +87,10 @@ const Notification = (n) => {
 
 export const NotificationPopup = Widget.Window({
   name: "notifications",
-  class_name: "notif-window",
   anchor: ["top"],
-  // margins: [4, 4, 0],
   child: Widget.Box({
     class_name: "notifications",
     vertical: true,
-    children: Notifications.bind("popups").as((popups) => {
-      return popups.map(Notification);
-    }),
+    children: popups.as((popups) => popups.map(Notification)),
   }),
 });

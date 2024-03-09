@@ -1,7 +1,7 @@
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { execAsync } from "resource:///com/github/Aylur/ags/utils.js";
 
-const LOCKCMD = `${App.configDir}/scripts/screenlock`;
+const LOCKCMD = `waylock -init-color 0x111517 -input-color 0x5a7d82 -fail-color 0xa54242`;
 
 /**
  * @param {string} cmd

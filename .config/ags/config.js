@@ -1,6 +1,4 @@
 // Here be dragons
-
-import App from "resource:///com/github/Aylur/ags/app.js";
 import { Bar } from "./js/bar/Bar.js";
 import { Cal } from "./js/calendar/Cal.js";
 import { NotificationPopup } from "./js/notifs/NotificationPopup.js";

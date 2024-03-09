@@ -3,7 +3,7 @@ window#notifications {
   font-family: "Iosevka NF";
 
   .notifications {
-    padding: 0.5em;
+    padding: 0.5em 1px 0.5em 1px;
   }
 
   .icon {
@@ -18,15 +18,13 @@ window#notifications {
     }
 
     image {
-      font-size: 52px;
-      margin: 5px;
-      margin: 5px;
+      font-size: 68px;
       color: $fg;
     }
   }
 
   .notification {
-    min-width: 330px;
+    min-width: 32em;
     border-radius: 12px;
     padding: 0.8em;
     margin: 0.4em;
@@ -54,10 +52,9 @@ window#notifications {
     .action-button {
       color: $fg;
       background: $bg-light;
-      border-radius: 12px;
-      padding: 0.8em;
-      margin: 0 0.4em;
+      border-radius: 0.8em;
       margin-top: 0.8em;
+      padding: 0.8em;
 
       &:first-child {
         margin-left: 0;
