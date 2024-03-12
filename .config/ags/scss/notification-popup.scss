@@ -1,15 +1,13 @@
-window#notifications {
+window.notification-popups box.notifications {
   all: unset;
   font-family: "Iosevka NF";
-
-  .notifications {
-    padding: 0.5em 1px 0.5em 1px;
-  }
+  padding: 0.5em 1px 0.5em 1px;
 
   .icon {
     min-width: 68px;
     min-height: 68px;
     margin-right: 1em;
+    margin-left: 0.6em;
 
     box {
       min-width: 68px;
@@ -26,13 +24,19 @@ window#notifications {
   .notification {
     min-width: 32em;
     border-radius: 12px;
-    padding: 0.8em;
     margin: 0.4em;
+    // padding: 0.4em;
     border: 2px solid $color0;
     box-shadow: 0 0 2px 2px #000000;
     background-color: $bg-dark;
 
-    .critical {
+    .content {
+      background: $bg-light;
+      border-radius: 12px;
+      padding: 0.4em;
+    }
+
+    &.critical {
       border: 2px solid $color1;
     }
   }
@@ -46,12 +50,13 @@ window#notifications {
   .body {
     color: $fg;
     font-size: 0.9em;
+    margin-top: 0.8em;
   }
 
   .actions {
     .action-button {
       color: $fg;
-      background: $bg-light;
+      background: adjust-color($bg-light, $lightness: 2%);
       border-radius: 0.8em;
       margin-top: 0.8em;
       padding: 0.8em;
@@ -65,7 +70,7 @@ window#notifications {
       }
 
       &:hover {
-        background: $hover;
+        background: adjust-color($hover, $lightness: 2%);
       }
     }
   }

@@ -58,6 +58,7 @@ window#control-panel {
 
   .audio-slider {
     all: unset;
+    font-size: 0.9em;
     background: $bg-light;
     padding: 0 0.8em;
     min-width: 25em;
@@ -122,6 +123,7 @@ window#control-panel {
     background: $bg-light;
     border-radius: 8px;
     min-height: 3em;
+    font-size: 0.9em;
 
     .icon {
       color: $color5;

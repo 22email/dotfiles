@@ -122,51 +122,55 @@ window#cal-window {
   window#cal-window calendar:indeterminate {
     color: #161b1d; }
 
-window#notifications {
+window.notification-popups box.notifications {
   all: unset;
-  font-family: "Iosevka NF"; }
-  window#notifications .notifications {
-    padding: 0.5em 1px 0.5em 1px; }
-  window#notifications .icon {
+  font-family: "Iosevka NF";
+  padding: 0.5em 1px 0.5em 1px; }
+  window.notification-popups box.notifications .icon {
     min-width: 68px;
     min-height: 68px;
-    margin-right: 1em; }
-    window#notifications .icon box {
+    margin-right: 1em;
+    margin-left: 0.6em; }
+    window.notification-popups box.notifications .icon box {
       min-width: 68px;
       min-height: 68px;
       border-radius: 7px; }
-    window#notifications .icon image {
+    window.notification-popups box.notifications .icon image {
       font-size: 68px;
       color: #c2c4c2; }
-  window#notifications .notification {
+  window.notification-popups box.notifications .notification {
     min-width: 32em;
     border-radius: 12px;
-    padding: 0.8em;
     margin: 0.4em;
     border: 2px solid #111115;
     box-shadow: 0 0 2px 2px #000000;
     background-color: #111517; }
-    window#notifications .notification .critical {
+    window.notification-popups box.notifications .notification .content {
+      background: #161b1d;
+      border-radius: 12px;
+      padding: 0.4em; }
+    window.notification-popups box.notifications .notification.critical {
       border: 2px solid #a54242; }
-  window#notifications .title {
+  window.notification-popups box.notifications .title {
     color: #c2c4c2;
     font-weight: bold;
     font-size: 1.2em; }
-  window#notifications .body {
+  window.notification-popups box.notifications .body {
     color: #c2c4c2;
-    font-size: 0.9em; }
-  window#notifications .actions .action-button {
+    font-size: 0.9em;
+    margin-top: 0.8em; }
+  window.notification-popups box.notifications .actions .action-button {
     color: #c2c4c2;
-    background: #161b1d;
+    background: #1a2023;
     border-radius: 0.8em;
     margin-top: 0.8em;
     padding: 0.8em; }
-    window#notifications .actions .action-button:first-child {
+    window.notification-popups box.notifications .actions .action-button:first-child {
       margin-left: 0; }
-    window#notifications .actions .action-button:last-child {
+    window.notification-popups box.notifications .actions .action-button:last-child {
       margin-right: 0; }
-    window#notifications .actions .action-button:hover {
-      background: #21282c; }
+    window.notification-popups box.notifications .actions .action-button:hover {
+      background: #252d32; }
 
 window#image-window {
   background: transparent; }
@@ -218,6 +222,7 @@ window#control-panel {
       color: #576d9f; }
   window#control-panel .audio-slider {
     all: unset;
+    font-size: 0.9em;
     background: #161b1d;
     padding: 0 0.8em;
     min-width: 25em;
@@ -249,7 +254,8 @@ window#control-panel {
     padding: 0 0.8em;
     background: #161b1d;
     border-radius: 8px;
-    min-height: 3em; }
+    min-height: 3em;
+    font-size: 0.9em; }
     window#control-panel .wifi .icon {
       color: #766991; }
     window#control-panel .wifi:hover {

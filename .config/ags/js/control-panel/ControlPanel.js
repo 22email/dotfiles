@@ -34,8 +34,8 @@ export const ControlPanel = () =>
   Widget.Window({
     name: "control-panel",
     anchor: ["bottom", "left"],
-    visible: false,
     popup: true,
+    visible: false,
     margins: [0, 4, 4],
     child: Widget.Box({
       className: "control-box",
