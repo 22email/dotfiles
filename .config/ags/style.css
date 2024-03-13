@@ -123,23 +123,23 @@ window#cal-window {
     color: #161b1d; }
 
 window.notification-popups box.notifications {
-  all: unset;
   font-family: "Iosevka NF";
-  padding: 0.5em 1px 0.5em 1px; }
+  padding: 0.5rem 1rem 0.5rem 1rem; }
+  window.notification-popups box.notifications * {
+    all: unset; }
   window.notification-popups box.notifications .icon {
-    min-width: 68px;
-    min-height: 68px;
-    margin-right: 1em;
-    margin-left: 0.6em; }
+    min-width: 78px;
+    min-height: 78px;
+    margin: 1rem; }
     window.notification-popups box.notifications .icon box {
       min-width: 68px;
       min-height: 68px;
       border-radius: 7px; }
     window.notification-popups box.notifications .icon image {
-      font-size: 68px;
+      font-size: 58px;
       color: #c2c4c2; }
   window.notification-popups box.notifications .notification {
-    min-width: 32em;
+    min-width: 30em;
     border-radius: 12px;
     margin: 0.4em;
     border: 2px solid #111115;
@@ -148,7 +148,7 @@ window.notification-popups box.notifications {
     window.notification-popups box.notifications .notification .content {
       background: #161b1d;
       border-radius: 12px;
-      padding: 0.4em; }
+      padding: 0.8em; }
     window.notification-popups box.notifications .notification.critical {
       border: 2px solid #a54242; }
   window.notification-popups box.notifications .title {
@@ -158,12 +158,12 @@ window.notification-popups box.notifications {
   window.notification-popups box.notifications .body {
     color: #c2c4c2;
     font-size: 0.9em;
-    margin-top: 0.8em; }
+    margin-top: 0.8em;
+    margin-bottom: 0.8em; }
   window.notification-popups box.notifications .actions .action-button {
     color: #c2c4c2;
     background: #1a2023;
     border-radius: 0.8em;
-    margin-top: 0.8em;
     padding: 0.8em; }
     window.notification-popups box.notifications .actions .action-button:first-child {
       margin-left: 0; }

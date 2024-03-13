@@ -5,6 +5,7 @@ import { speakerIcon, microphoneIcon } from "../Variables.js";
 /** @param {'speaker' | 'microphone'} type */
 const AudioSlider = (type = "speaker") =>
   Widget.Box({
+    spacing: 12,
     class_name: `audio-slider ${type}`,
     children: [
       Widget.Icon({ class_name: "icon" }).hook(
@@ -16,7 +17,6 @@ const AudioSlider = (type = "speaker") =>
         `${type}-changed`,
       ),
       Widget.Label({
-        css: "min-width: 35px",
       }).hook(
         audio,
         (self) => {

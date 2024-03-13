@@ -7,24 +7,31 @@ import { NotificationPopup } from "./js/notifs/NotificationPopup.js";
 import { ImageWindow } from "./js/image-window/ImageWindow.js";
 import { ControlPanel } from "./js/control-panel/ControlPanel.js";
 
-// Utils.timeout(100, () =>
-//   Utils.notify({
-//     summary: "Notification Popup Example",
-//     iconName: "info-symbolic",
-//     body:
-//       "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
-//       "minim sint cillum sint consectetur cupidatat.",
-//     actions: {
-//       Cool: () => print("pressed Cool"),
-//     },
-//   }),
-// );
-
-// Utils.timeout(100, () =>
-//   Utils.notify({
-//     summary: "hi"
-//   }),
-// );
+Utils.timeout(100, () =>
+  Utils.notify({
+    summary: "Notification Popup Example",
+    iconName: "info-symbolic",
+    body:
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing " +
+      "minim sint cillum sint consectetur cupidatat.",
+    actions: {
+      Cool: () => print("pressed Cool"),
+    },
+  }),
+);
 
 const scss = `${App.configDir}/scss/style.scss`;
 const css = `${App.configDir}/style.css`;
