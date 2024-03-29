@@ -1,6 +1,6 @@
 # My Suckless System
 
-`sucks slightly less`
+`i don't use this anymore`
 
 ## Screenshot
 
@@ -18,6 +18,7 @@
 - editor: NvChad (Neovim)
 - notifs: dunst
 - compositor: compfy (I have this off most of the time)
+- font: Iosevka Mayukai
 
 ## Credit
 
