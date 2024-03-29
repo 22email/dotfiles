@@ -1,5 +1,4 @@
 #!/bin/sh
-# Displays the current time in HH:MM:SS (AM|PM)
 
 case $BLOCK_BUTTON in
     6) "$TERMINAL" -e "$EDITOR" "$0" ;;
